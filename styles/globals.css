@@ -2,32 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.header {
+  @apply flex flex-col w-full h-full bg-blue-500 text-white rounded-2xl;
+  background-image: url(https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.header:hover {
+  @apply shadow-2xl
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h1 {
+  @apply mt-12 text-4xl font-bold text-center;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+p {
+  @apply text-lg;
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.section-content {
+  @apply mx-auto max-w-screen-lg;
 }
