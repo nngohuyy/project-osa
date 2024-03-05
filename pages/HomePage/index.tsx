@@ -1,11 +1,18 @@
 import { Button, ButtonGroup } from "@nextui-org/react";
+import Card from "../components/Card";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export default function HomePage() {
   return (
     <main className="px-40">
-      <div className="px-40 mt-10">
+      <div className="px-0 mt-3 mb-16 xl:px-0">
         <div className="header">
-          <div className="mt-96 mb-10 px-40 text-center flex flex-col gap-6">
+          <div className="container max-w-screen-xl px-10 mt-96 mb-10 text-center flex flex-col gap-6">
             <div className="text-5xl font-bold">
               OISP International Festival 2024
             </div>
@@ -25,6 +32,38 @@ export default function HomePage() {
       </div>
       <div className="section-content">
         <h1>View recent OSA events</h1>
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={-150}
+          centeredSlides={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Navigation, Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <Card />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card />
+          </SwiperSlide>
+        </Swiper>
       </div>
     </main>
   );

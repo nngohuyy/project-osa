@@ -20,7 +20,7 @@ export default function NavBar() {
 
   return (
     <Navbar
-      isBordered
+      shouldHideOnScroll
       onMenuOpenChange={setIsMenuOpen}
       classNames={{wrapper:"px-0"}}
       className="px-8 h-16 md:px-10 lg:px-40 lg:h-20"
