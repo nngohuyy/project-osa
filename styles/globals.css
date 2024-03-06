@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 .header {
-  @apply flex flex-col w-full h-full bg-blue-500 text-white rounded-2xl shadow-[13px_13px_0_rgb(0,0,0)];
-  background-image: url(https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg);
+  @apply flex flex-col w-full h-full text-white rounded-2xl shadow-[13px_13px_0_rgb(36,74,208,0.5)];
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.8)), url(https://scontent.fsgn8-4.fna.fbcdn.net/v/t39.30808-6/297780924_5038936416210872_8607733359611024758_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG01yfbaS3Oi0czyk3WULWPYscgNDz3uR9ixyA0PPe5H_LMvC8OgfV5MCs0BJABtBU4IMcBKPjJayLgVHs0JGkH&_nc_ohc=XNv30hdzq7MAX-OsnC-&_nc_ht=scontent.fsgn8-4.fna&oh=00_AfCHEfN6mkiVcHeVjoX4ukXJOIe5lPA4xIV580ZI2WceAQ&oe=65ECC0CB);
   background-size: cover;
   background-position: center;
 }
 .header:hover {
-  @apply shadow-[7px_7px_0px_rgb(0,0,0)] ease-out translate-y-1 transition-all;
+  @apply shadow-[7px_7px_0px_rgb(150,150,150)] ease-out translate-y-1 transition-all;
 }
 
 h1 {
@@ -29,8 +29,8 @@ a {
 }
 
 .section-about {
-  @apply grid justify-between grid-cols-3 gap-x-5;
-  grid-template-columns: 3fr 1fr 1fr;
+  @apply grid justify-between grid-cols-2 gap-x-5;
+  grid-template-columns: 4.5fr 1fr;
 }
 
 .social-links {
@@ -38,7 +38,7 @@ a {
 }
 
 .gallery-item {
-  @apply my-10 flex flex-col h-[full] max-w-[340px];
+  @apply my-10 flex flex-col h-[full] w-[340px];
 }
 
 .gallery-item-content {
@@ -51,4 +51,28 @@ a {
   background-image: url(https://scontent.fsgn8-4.fna.fbcdn.net/v/t39.30808-6/429803147_392436400317204_1659964167426316618_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a73e89&_nc_eui2=AeE5bcsSse6zCd4zalnBqCZowQ8vaJ4ALLLBDy9ongAssrDn0zJ8KjXhjADL-ybpT1i25ypJUMByh7BLLMwdH1sc&_nc_ohc=N5ZqfezT07AAX-G_yec&_nc_ht=scontent.fsgn8-4.fna&oh=00_AfBZXKfOScFhmVgLJkDK5jyykLX8J2iWmYSfioT26PvwfA&oe=65EB67F4);
   background-size: cover;
   background-position: center;
+}
+
+.line {
+  @apply w-full h-[2px] bg-gray-300 rounded-full;
+}
+
+.fab {
+  @apply flex items-center justify-center w-10 h-10 bg-blue-500 rounded-full;
+}
+
+.mySwiper {
+  @apply w-full h-full;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide{
+  max-width: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

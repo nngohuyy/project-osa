@@ -9,8 +9,8 @@ import 'swiper/css/pagination';
 
 export default function HomePage() {
   return (
-    <main className="px-40">
-      <div className="px-0 mt-3 mb-16 xl:px-0">
+    <main>
+      <div className="container px-15 mb-16">
         <div className="header">
           <div className="container max-w-screen-xl px-10 mt-96 mb-10 text-center flex flex-col gap-6">
             <div className="text-5xl font-bold">
@@ -20,7 +20,7 @@ export default function HomePage() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione alias quam maiores culpa. Itaque perferendis, nisi porro explicabo velit enim doloremque officia doloribus nesciunt? Harum fuga molestiae quasi blanditiis enim.
             </p>
             <div className="flex gap-4 items-center justify-center">
-              <Button color="primary" variant="solid">
+              <Button color="primary" variant="solid" className="border-2">
                 Register now
               </Button>
               <Button color="primary" variant="faded">
@@ -34,11 +34,8 @@ export default function HomePage() {
         <h1>View recent OSA events</h1>
         <Swiper
           slidesPerView={4}
-          spaceBetween={-150}
+          spaceBetween={20}
           centeredSlides={true}
-          pagination={{
-            clickable: true,
-          }}
           modules={[Navigation, Pagination]}
           className="mySwiper"
         >

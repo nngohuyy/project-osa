@@ -9,7 +9,7 @@ const manrope = Manrope({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div className={manrope.className}>
-      <NavBar />
+      <NavBar />  
       <HomePage />
       <Footer />
     </div>

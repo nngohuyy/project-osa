@@ -2,12 +2,10 @@ import React from "react";
 import Image from "next/image";
 import logo from "/public/osaX-horizontal.svg";
 
-export default function OSALogo() {
-  return(
+export const OSALogo = () => (
     <Image
       src={logo}
       alt="OSA Logo"
-      width={240}
+      height={40}
     />
-  );
-}
+);
