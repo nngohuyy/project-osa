@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Manrope } from "next/font/google";
 import HomePage from "./HomePage";
 import NavBar from "./navbar";
