@@ -71,8 +71,20 @@ a {
 }
 
 .swiper-slide{
-  max-width: 340px;
+  width: 340px !important;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    @apply my-10 flex flex-col h-[full] w-[280px];
+  }
+  .swiper-slide{
+    width: 280px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

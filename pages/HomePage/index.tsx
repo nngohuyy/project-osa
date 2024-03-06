@@ -33,11 +33,10 @@ export default function HomePage() {
       <div className="section-content">
         <h1>View recent OSA events</h1>
         <Swiper
-          slidesPerView={4}
-          spaceBetween={20}
+          // slidesPerView={"auto"} 
+          // spaceBetween={0}
           centeredSlides={true}
           modules={[Navigation, Pagination]}
-          className="mySwiper"
         >
           <SwiperSlide>
             <Card />

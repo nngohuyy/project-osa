@@ -11,7 +11,7 @@ export default function Card() {
             <h3>BizTech Talk #16: AIvolution</h3>
             <h4>February 02, 2024</h4>
             <p className="my-3 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nulla harum laudantium doloremque atque libero, impedit velit, necessitatibus totam asperiores incidunt corrupti, cumque itaque porro quod at aliquid similique corporis!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nulla harum laudantium doloremque atque libero, impedit velit, necessitatibus totam asperiores.
             </p>
             <Button
               className="mt-3"

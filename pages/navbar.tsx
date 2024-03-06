@@ -6,9 +6,8 @@ export default function App() {
   return (
       <Navbar
         shouldHideOnScroll
-        classNames={{ wrapper: "px-0" }}
-        maxWidth="xl"
-        className="px-5 py-2"
+        classNames={{ wrapper: "max-w-screen-xl px-5"}}
+        maxWidth="full"
       >
         <NavbarBrand>
           <OSALogo />
