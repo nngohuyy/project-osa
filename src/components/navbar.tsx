@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
-import { OSALogo } from "./OSALogo";
+import { OSALogo } from "../pages/OSALogo";
 
 export default function App() {
   return (

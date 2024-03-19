@@ -1,5 +1,5 @@
 import { Button, ButtonGroup } from "@nextui-org/react";
-import Card from "../components/Card";
+import Card from "../../components/Card";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 
