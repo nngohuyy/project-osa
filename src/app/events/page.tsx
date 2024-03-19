@@ -1,3 +1,5 @@
+'use client'
+
 import { Button, ButtonGroup } from "@nextui-org/react";
 import Card from "../../components/Card";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,7 +9,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-export default function HomePage() {
+export default function EventsPage() {
   return (
     <main>
       <div className="container px-15 mb-16">
@@ -33,7 +35,7 @@ export default function HomePage() {
       <div className="section-content">
         <h1>View recent OSA events</h1>
         <Swiper
-          slidesPerView={2} 
+          slidesPerView={2}
           spaceBetween={20}
           centeredSlides={true}
           modules={[Navigation, Pagination]}
