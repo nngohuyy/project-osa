@@ -1,13 +1,15 @@
 'use client'
 
 import { Button, ButtonGroup } from "@nextui-org/react";
-import Card from "../../components/Card";
+import Card from "../../components/Card/Card";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+
+import { EVENTS } from "../../constants/eventList";
 
 export default function EventsPage() {
   return (
@@ -35,32 +37,20 @@ export default function EventsPage() {
       <div className="section-content">
         <h1>View recent OSA events</h1>
         <Swiper
-          slidesPerView={2}
+          slidesPerView={5}
           spaceBetween={20}
           centeredSlides={true}
           modules={[Navigation, Pagination]}
         >
-          <SwiperSlide>
-            <Card />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card />
-          </SwiperSlide>
+          {EVENTS.eventList.map((event) => (
+            <SwiperSlide key={event.id}>
+              <Card
+                eventName={event.eventName}
+                eventDate={event.eventDate}
+                eventDescription={event.eventDescription}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </main>

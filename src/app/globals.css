@@ -47,10 +47,7 @@ a {
 
 .image {
   @apply rounded-2xl;
-  height: 240px;
-  background-image: url(https://scontent.fsgn8-4.fna.fbcdn.net/v/t39.30808-6/429803147_392436400317204_1659964167426316618_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a73e89&_nc_eui2=AeE5bcsSse6zCd4zalnBqCZowQ8vaJ4ALLLBDy9ongAssrDn0zJ8KjXhjADL-ybpT1i25ypJUMByh7BLLMwdH1sc&_nc_ohc=N5ZqfezT07AAX-G_yec&_nc_ht=scontent.fsgn8-4.fna&oh=00_AfBZXKfOScFhmVgLJkDK5jyykLX8J2iWmYSfioT26PvwfA&oe=65EB67F4);
-  background-size: cover;
-  background-position: center;
+  height: 240px !important;
 }
 
 .line {

@@ -1,10 +1,14 @@
 'use client'
 
 import React from "react";
+import { usePathname } from "next/navigation";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
 import { OSALogo } from "./OSALogo";
 
-export default function App() {
+import { ROUTES } from "../constants/navigationRoutes";
+
+export default function NavBar() {
+  const pathName = usePathname();
   return (
     <Navbar
       shouldHideOnScroll
@@ -17,21 +21,13 @@ export default function App() {
         </Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-8" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="events">
-            Events
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="news" aria-current="page">
-            News
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="contact">
-            Contact
-          </Link>
-        </NavbarItem>
+        {ROUTES.navigationRoutes.map((route) => (
+          <NavbarItem key={route} isActive={pathName.startsWith(`/${route}`)}>
+            <Link href={`/${route}`}>
+              {route.charAt(0).toUpperCase() + route.slice(1)}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
