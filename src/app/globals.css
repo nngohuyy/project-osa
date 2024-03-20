@@ -4,7 +4,7 @@
 
 .header {
   @apply flex flex-col w-full h-full text-white rounded-2xl shadow-[13px_13px_0_rgb(36,74,208,0.5)];
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.8)), url(https://scontent.fsgn8-4.fna.fbcdn.net/v/t39.30808-6/297780924_5038936416210872_8607733359611024758_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG01yfbaS3Oi0czyk3WULWPYscgNDz3uR9ixyA0PPe5H_LMvC8OgfV5MCs0BJABtBU4IMcBKPjJayLgVHs0JGkH&_nc_ohc=XNv30hdzq7MAX-OsnC-&_nc_ht=scontent.fsgn8-4.fna&oh=00_AfCHEfN6mkiVcHeVjoX4ukXJOIe5lPA4xIV580ZI2WceAQ&oe=65ECC0CB);
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.8)), url(/eventsPage_cover.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -46,8 +46,7 @@ a {
 }
 
 .image {
-  @apply rounded-2xl;
-  height: 240px !important;
+  @apply rounded-2xl aspect-square w-full object-cover object-center;
 }
 
 .line {
@@ -83,5 +82,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .image {
+    @apply rounded-2xl aspect-[3/2] w-full object-cover object-center;
   }
 }

@@ -5,14 +5,14 @@ export const EVENTS = {
       eventName: "OISP International Festival 2024: Luminary",
       eventDate: "April 6, 2024",
       eventDescription: "lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione alias quam maiores culpa. Itaque perferendis, nisi porro explicabo velit enim doloremque officia doloribus nesciunt? Harum fuga molestiae quasi blanditiis enim.",
-      eventImage: require("/public/1_oif24.png"),
+      eventImage: "/1_oif24.png",
     },
     {
       id: 2,
       eventName: "OSA Podcasts #2: The Concentric Circles",
       eventDate: "March 12, 2024",
       eventDescription: "lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione alias quam maiores culpa. Itaque perferendis, nisi porro explicabo velit enim doloremque officia doloribus nesciunt? Harum fuga molestiae quasi blanditiis enim.",
-      eventImage: require("/public/2_podcast2.jpg"),
+      eventImage: "/2_podcast2.jpg",
     },
     {
       id: 3,
@@ -26,14 +26,14 @@ export const EVENTS = {
       eventName: "OISP International Festival 2023: Prismetry",
       eventDate: "May 7, 2023",
       eventDescription: "lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione alias quam maiores culpa. Itaque perferendis, nisi porro explicabo velit enim doloremque officia doloribus nesciunt? Harum fuga molestiae quasi blanditiis enim.",
-      eventImage: "/3_biztech16.jpg",
+      eventImage: "/4_oif23.jpg",
     },
     {
       id: 5,
       eventName: "BizTech Talk #15: Scaniversal",
       eventDate: "December 4, 2022",
       eventDescription: "lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione alias quam maiores culpa. Itaque perferendis, nisi porro explicabo velit enim doloremque officia doloribus nesciunt? Harum fuga molestiae quasi blanditiis enim.",
-      eventImage: "/3_biztech16.jpg",
+      eventImage: "/5_biztech13.jpg",
     },
   ]
 }

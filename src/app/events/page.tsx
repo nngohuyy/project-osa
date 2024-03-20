@@ -21,7 +21,7 @@ export default function EventsPage() {
               OISP International Festival 2024
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione alias quam maiores culpa. Itaque perferendis, nisi porro explicabo velit enim doloremque officia doloribus nesciunt? Harum fuga molestiae quasi blanditiis enim.
+              OISP Student Ambassadors, established in 2015, aims at promoting the image of OISP students and being a bridge between OISP and students, between Vietnamese students and international student, and between students and employers.
             </p>
             <div className="flex gap-4 items-center justify-center">
               <Button color="primary" variant="solid" className="border-2">
@@ -45,9 +45,8 @@ export default function EventsPage() {
           {EVENTS.eventList.map((event) => (
             <SwiperSlide key={event.id}>
               <Card
-                eventName={event.eventName}
-                eventDate={event.eventDate}
-                eventDescription={event.eventDescription}
+                {
+                ...event}
               />
             </SwiperSlide>
           ))}

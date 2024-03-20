@@ -3,6 +3,8 @@
 import Image from 'next/image';
 import logo from "/public/osaX-vertical.svg";
 
+const currentYear = new Date().getFullYear();
+
 export default function Footer() {
   return (
     <main>
@@ -11,18 +13,18 @@ export default function Footer() {
           <div className="section-about">
             <div>
               <h3 className="xl:mr-60 font-normal">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex saepe velit laborum pariatur, rem aperiam repellendus fuga culpa a modi ad omnis fugiat nihil. Magnam a eos ipsum minima iste.
+                OISP Student Ambassadors, established in 2015, aims at promoting the image of OISP students and being a bridge between OISP and students, between Vietnamese students and international student, and between students and employers.
               </h3>
               <div className='section-social mt-10'>
                 <h3>Follow us on social media</h3>
                 <div className="flex gap-4 mt-2">
-                  <a href="#" className="text-2xl">
+                  <a href="https://www.facebook.com/oisp.student.ambassadors" className="text-2xl">
                     <i className="fab fa-facebook-square"></i>
                   </a>
-                  <a href="#" className="text-2xl">
+                  <a href="https://www.instagram.com/osaxoi/" className="text-2xl">
                     <i className="fab fa-twitter-square"></i>
                   </a>
-                  <a href="#" className="text-2xl">
+                  <a href="https://www.youtube.com/@oispstudentambassadors2015" className="text-2xl">
                     <i className="fab fa-instagram-square"></i>
                   </a>
                   <a href="#" className="text-2xl">
@@ -41,7 +43,7 @@ export default function Footer() {
           <div className="line mt-6">
           </div>
           <h3 className="mt-1 font-normal">
-            Copyright © 2024 OISP Student Ambassadors. All rights reserved.
+            Copyright © {currentYear} OISP Student Ambassadors. All rights reserved.
           </h3>
         </div>
       </div>
