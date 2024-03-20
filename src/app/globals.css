@@ -38,7 +38,7 @@ a {
 }
 
 .gallery-item {
-  @apply my-10 flex flex-col h-[full] w-[340px];
+  @apply my-10 flex flex-col h-full;
 }
 
 .gallery-item-content {
@@ -74,6 +74,12 @@ a {
 }
 
 @media (max-width: 768px) {
+  .section-about {
+    @apply flex flex-col-reverse gap-4;
+  }
+  .osa-logo {
+    @apply w-[30%];
+  }
   .gallery-item {
     @apply my-10 flex flex-col h-[full] w-[280px];
   }

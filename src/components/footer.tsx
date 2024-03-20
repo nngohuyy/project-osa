@@ -33,7 +33,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className='osa-logo'>
               <Image
                 src={logo}
                 alt="OSA Logo"
