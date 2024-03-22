@@ -10,7 +10,19 @@ export default function NewsPage() {
     <main>
       <div className="section-content">
         <h1>Our latest news</h1>
-        <div className="container max-w-screen-xl grid grid-cols-4 gap-x-5">
+        <div className="container max-w-screen-xl grid justify-center gap-3 grid-cols-1 px-5 md:grid-cols-2 md:gap-5 lg:grid-cols-4">
+          {EVENTS.eventList.map((event) => (
+            <Card key={event.id}
+              {
+              ...event}
+            />
+          ))}
+          {EVENTS.eventList.map((event) => (
+            <Card key={event.id}
+              {
+              ...event}
+            />
+          ))}
           {EVENTS.eventList.map((event) => (
             <Card key={event.id}
               {

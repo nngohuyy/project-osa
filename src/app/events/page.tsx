@@ -14,14 +14,14 @@ import { EVENTS } from "../../constants/eventList";
 export default function EventsPage() {
   return (
     <main>
-      <div className="container px-15 mb-16">
+      <div className="h-[calc(100vh-64px)] md:h-[94vh] mb-16">
         <div className="header">
-          <div className="container max-w-screen-xl px-10 mt-96 mb-10 text-center flex flex-col gap-6">
-            <div className="text-5xl font-bold">
+          <div className="container max-w-screen-xl px-10 mt-auto mb-10 md:mb-[90px] text-center flex flex-col gap-6">
+            <div className="text-4xl lg:text-6xl font-bold">
               OISP International Festival 2024
             </div>
-            <p>
-              OISP Student Ambassadors, established in 2015, aims at promoting the image of OISP students and being a bridge between OISP and students, between Vietnamese students and international student, and between students and employers.
+            <p className="mx-auto text-xl max-w-[640px]">
+              OISP Student Ambassadors, established in 2015, aims at promoting the image of OISP students.
             </p>
             <div className="flex gap-4 items-center justify-center">
               <Button color="primary" variant="solid" className="border-2">

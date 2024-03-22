@@ -3,17 +3,14 @@
 @tailwind utilities;
 
 .header {
-  @apply flex flex-col w-full h-full text-white rounded-2xl shadow-[13px_13px_0_rgb(36,74,208,0.5)];
+  @apply flex flex-col w-full h-full text-white;
   background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.8)), url(/eventsPage_cover.jpg);
   background-size: cover;
   background-position: center;
 }
-.header:hover {
-  @apply shadow-[7px_7px_0px_rgb(150,150,150)] ease-out translate-y-1 transition-all;
-}
 
 h1 {
-  @apply mt-12 text-4xl font-bold text-center;
+  @apply mt-12 mb-6 text-4xl font-bold text-center;
 }
 
 h3, h4 {
@@ -38,7 +35,7 @@ a {
 }
 
 .gallery-item {
-  @apply my-10 flex flex-col h-full;
+  @apply flex flex-col h-full;
 }
 
 .gallery-item-content {
@@ -80,9 +77,6 @@ a {
   .osa-logo {
     @apply w-[30%];
   }
-  .gallery-item {
-    @apply my-10 flex flex-col h-[full] w-[280px];
-  }
   .swiper-slide{
     width: 280px !important;
     display: flex;
@@ -90,6 +84,6 @@ a {
     align-items: center;
   }
   .image {
-    @apply rounded-2xl aspect-[3/2] w-full object-cover object-center;
+    @apply rounded-2xl aspect-[16/9] w-full object-cover object-center;
   }
 }

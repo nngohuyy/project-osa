@@ -10,11 +10,12 @@ const config: Config = {
   theme: {
     container: {
       screens: {
-        sm: '600px',
-        md: '728px',
-        lg: '984px',
-        xl: '1280px',
-        '2xl': '1496px',
+        '2xl': { max: '1536px'},
+        xl: { max: '1280px'},
+        lg: { max: '1024px'},
+        md: { max: '768px'},
+        sm: { max: '640px'},
+        xs: { max: '480px'},
       },
       center: true,
     },
