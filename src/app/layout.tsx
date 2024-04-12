@@ -1,6 +1,8 @@
 'use client'
 
 import './globals.css';
+import 'primeicons/primeicons.css';
+
 
 import { Metadata } from 'next'
 import { NextUIProvider } from "@nextui-org/react";

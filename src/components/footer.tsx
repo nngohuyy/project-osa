@@ -8,7 +8,7 @@ const currentYear = new Date().getFullYear();
 export default function Footer() {
   return (
     <main>
-      <div className="bg-neutral-100 mt-12">
+      <div className="bg-neutral-100">
         <div className="container px-5 py-4 xl:py-10 max-w-screen-xl">
           <div className="section-about">
             <div>
@@ -19,16 +19,13 @@ export default function Footer() {
                 <h3>Follow us on social media</h3>
                 <div className="flex gap-4 mt-2">
                   <a href="https://www.facebook.com/oisp.student.ambassadors" className="text-2xl">
-                    <i className="fab fa-facebook-square"></i>
+                    <i className="pi pi-facebook text-[2rem]"></i>
                   </a>
                   <a href="https://www.instagram.com/osaxoi/" className="text-2xl">
-                    <i className="fab fa-twitter-square"></i>
+                    <i className="pi pi-instagram text-[2rem]"></i>
                   </a>
                   <a href="https://www.youtube.com/@oispstudentambassadors2015" className="text-2xl">
-                    <i className="fab fa-instagram-square"></i>
-                  </a>
-                  <a href="#" className="text-2xl">
-                    <i className="fab fa-linkedin"></i>
+                    <i className="pi pi-youtube text-[2rem]"></i>
                   </a>
                 </div>
               </div>
