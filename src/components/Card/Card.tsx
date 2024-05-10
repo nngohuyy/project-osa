@@ -10,28 +10,28 @@ type CardProps = {
   eventImage: string;
 }
 
-export default function Card({eventDate, eventDescription, eventImage, eventName}: CardProps) {
+export default function Card({ eventDate, eventDescription, eventImage, eventName }: CardProps) {
   return (
     <main>
-      <div className="gallery-item">
-        <div className="gallery-item-content">
-          <img className="image" src={eventImage} alt=''/>
-          <div className="my-4 px-5">
+      <div className="flex flex-col h-full bg-gray-100 rounded-2xl">
+        <img className="image" src={eventImage} alt='' />
+        <div className="my-4 px-5 flex flex-col h-full justify-between">
+          <div>
             <h3>{eventName}</h3>
             <h4>{eventDate}</h4>
             <p className="my-3 text-sm">
               {eventDescription}
             </p>
-            <Button
-              className="mt-3"
-              color="primary"
-              size="sm"
-              radius="full"
-              variant="bordered"
-            >
-              Learn more
-            </Button>
           </div>
+          <Button
+            className="mt-3"
+            color="primary"
+            size="sm"
+            radius="full"
+            variant="bordered"
+          >
+            Learn more
+          </Button>
         </div>
       </div>
     </main>
