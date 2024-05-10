@@ -35,11 +35,7 @@ a {
 }
 
 .gallery-item {
-  @apply flex flex-col h-full;
-}
-
-.gallery-item-content {
-  @apply bg-gray-100 rounded-2xl;
+  @apply rounded-2xl bg-gray-100 flex flex-col grow shrink-0 basis-auto justify-between;
 }
 
 .image {
