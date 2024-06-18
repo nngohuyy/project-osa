@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Jerry's portfolio | Engineer",
-  description: "Jerry Nguyen portfolio's engineer page with information about projects and technical skills",
+  title: "OSA | Contact",
+  description: "OSA's page with contact information.",
 };
 
 export default function ContactLayout({ children }: { children: React.ReactNode }) {

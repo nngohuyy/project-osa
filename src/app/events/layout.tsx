@@ -1,10 +1,14 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Jerry's portfolio | Engineer",
-  description: "Jerry Nguyen portfolio's engineer page with information about projects and technical skills",
+  title: "OSA | Events",
+  description: "OSA's page with information about upcoming events and activities.",
 };
 
 export default function EventsLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return (
+    <div className="bg-white pb-40">
+      {children}
+    </div>
+  )
 }

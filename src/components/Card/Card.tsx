@@ -13,7 +13,7 @@ type CardProps = {
 export default function Card({ eventDate, eventDescription, eventImage, eventName }: CardProps) {
   return (
     <main>
-      <div className="flex flex-col h-full bg-gray-100 rounded-2xl">
+      <div className="flex flex-col border border-black h-full bg-white rounded-2xl">
         <img className="image" src={eventImage} alt='' />
         <div className="my-4 px-5 flex flex-col h-full justify-between">
           <div>

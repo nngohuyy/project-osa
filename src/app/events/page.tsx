@@ -13,7 +13,7 @@ import { EVENTS } from "../../constants/eventList";
 
 export default function EventsPage() {
   return (
-    <main className="mb-12">
+    <main>
       <div className="h-[calc(100vh-64px)] md:h-[94vh] mb-16">
         <div className="header">
           <div className="container max-w-screen-xl px-10 mt-auto mb-10 md:mb-[90px] text-center flex flex-col gap-6">

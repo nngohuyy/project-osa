@@ -2,11 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-[rgb(242,245,242)] text-gray-800;
+}
+
 .header {
   @apply flex flex-col w-full h-full text-white;
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.8)), url(/eventsPage_cover.jpg);
+  background-image: linear-gradient(to bottom, transparent 0%, #000000bd 70%, #000000 95%), url(/eventsPage_cover.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.home-section-heading {
+  @apply text-6xl mb-10 mt-0 font-bold;
 }
 
 h1 {
@@ -26,7 +34,7 @@ a {
 }
 
 p {
-  @apply mb-5 text-xl;
+  @apply text-lg;
 }
 
 .section-about {
