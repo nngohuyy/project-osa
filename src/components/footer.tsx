@@ -7,7 +7,7 @@ const currentYear = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <main>
+    <main className='mt-40'>
       <div className="bg-neutral-100">
         <div className="container px-5 py-4 xl:py-10 max-w-screen-xl">
           <div className="section-about">

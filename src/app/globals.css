@@ -25,6 +25,10 @@ a {
   /* @apply text-blue-500; */
 }
 
+p {
+  @apply mb-5 text-xl;
+}
+
 .section-about {
   @apply grid justify-between grid-cols-2 gap-x-5;
   grid-template-columns: 4.5fr 1fr;
