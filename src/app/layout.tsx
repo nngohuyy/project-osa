@@ -11,8 +11,11 @@ import { Manrope } from "next/font/google";
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 
-const manrope = Manrope({ subsets: ["latin"] });
- 
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: '--font-manrope',
+});
+
 // export const metadata: Metadata = {
 //   title: 'Home',
 //   description: 'Welcome to Next.js',
@@ -30,7 +33,7 @@ export default function RootLayout({
       <body className={manrope.className}>
         <NextUIProvider>
           <NavBar />
-          <main className='min-h-screen'>
+          <main className={`min-h-screen`}>
             {children}
           </main>
           <Footer />

@@ -2,14 +2,22 @@
 
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
+import { Space_Grotesk } from 'next/font/google';
+
+const gruppo = Space_Grotesk({
+  weight: "400",
+  subsets: ["latin"],
+  variable: '--font-gruppo',
+});
+
 
 export default function Home() {
   return (
-    <main className="pb-40 flex flex-col space-y-40">
-      <section className="home-top-card flex flex-col justify-center h-[calc(100dvh-72px)]">
+    <main className={`${gruppo.variable} translate-y-[-74px] pb-40 flex flex-col space-y-40`}>
+      <section className="home-top-card flex flex-col justify-center h-[100dvh]">
         <div className="max-w-screen-xl mx-auto px-6 md:px-14 xl:px-14">
           <div className="flex flex-col gap-10 w-2/3">
-            <p className="font-bold text-4xl md:text-6xl lg:text-7xl">We are<br/>OISP Student<br/>Ambassadors!</p>
+            <h1 className="font-bold text-4xl md:text-6xl lg:text-7xl">We are<br/>OISP Student<br/>Ambassadors.</h1>
             <p>
               We are a group of enthusiastic students who are passionate about
               promoting the image of OISP students. We are here to support you in your journey at HCMUT.
@@ -21,7 +29,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-screen-xl mx-auto px-6 md:px-14 xl:px-14 flex flex-row">
+      <section className="max-w-screen-xl mx-auto px-6 md:px-14 xl:px-14 flex flex-col md:flex-row">
         <div className="w-1/2">
           <h1 className="home-section-heading">Our mission</h1>
           <p>
@@ -36,7 +44,7 @@ export default function Home() {
       </section>
 
       <section className="max-w-screen-xl mx-auto px-6 md:px-14 xl:px-14 w-full">
-        <h1 className="home-section-heading">Our team</h1>
+        <h1 className="home-section-heading text-center">Our team</h1>
         <div className="grid grid-cols-3 gap-4 h-[500px]">
           <div className="h-full w-full bg-gray-300 rounded-xl">
             {/* insert team members here */}
@@ -50,8 +58,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-screen-xl mx-auto px-6 md:px-14 xl:px-14 w-full flex flex-row gap-10">
-        <div className="w-1/2 bg-gray-300 rounded-xl">
+      <section className="max-w-screen-xl mx-auto px-6 md:px-14 xl:px-14 w-full flex flex-col md:flex-row gap-10">
+        <div className="w-1/2 min-h-96 bg-gray-300 rounded-xl">
           {/* insert image here */}
         </div>
         <div className="w-1/2">

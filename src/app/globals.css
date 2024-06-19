@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[rgb(242,245,242)] text-gray-800;
+  @apply bg-[#F2F2F2] text-[#262323];
+  font-size: 1.125rem;
 }
 
 .header {
@@ -14,11 +15,12 @@ body {
 }
 
 .home-section-heading {
-  @apply text-6xl mb-10 mt-0 font-bold;
+  @apply text-6xl mb-8 font-bold;
 }
 
 h1 {
-  @apply mt-12 mb-6 text-4xl font-bold text-center;
+  @apply mb-6 text-4xl font-bold;
+  font-family: var(--font-gruppo);
 }
 
 h3, h4 {
@@ -33,8 +35,10 @@ a {
   /* @apply text-blue-500; */
 }
 
-p {
-  @apply text-lg;
+button {
+  @apply px-6 py-1.5 translate-y-[-2px] bg-[#3B7CF3] text-black hover:bg-[#0309A8] hover:text-white rounded-md border-2 border-black shadow-solid hover:shadow-none font-bold ease-out hover:translate-y-[0px] duration-[0.15s];
+  font-family: var(--font-gruppo);
+  font-size: 1.125rem;
 }
 
 .section-about {
