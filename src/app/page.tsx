@@ -3,6 +3,7 @@
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import { Space_Grotesk } from 'next/font/google';
+import MemberCard from "../components/MemberCard";
 
 const gruppo = Space_Grotesk({
   weight: "400",
@@ -17,7 +18,7 @@ export default function Home() {
       <section className="home-top-card flex flex-col justify-center h-[100dvh]">
         <div className="max-w-screen-xl mx-auto px-6 md:px-14 xl:px-14">
           <div className="flex flex-col gap-5 md:w-2/3">
-            <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl">We are<br/>OISP Student<br/>Ambassadors.</h1>
+            <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl">We are<br />OISP Student<br />Ambassadors.</h1>
             <p>
               We are a group of enthusiastic students who are passionate about promoting the image of OISP students. We are here to support you in your journey at HCMUT.
             </p>
@@ -42,16 +43,22 @@ export default function Home() {
 
       <section className="max-w-screen-xl mx-auto px-6 md:px-14 xl:px-14 w-full">
         <h1 className="home-section-heading !text-center">Our team</h1>
-        <div className="grid md:grid-cols-3 gap-4 h-[500px]">
-          <div className="h-full w-full bg-gray-300 rounded-xl">
-            {/* insert team members here */}
-          </div>
-          <div className="h-full w-full bg-gray-300 rounded-xl">
-            {/* insert team members here */}
-          </div>
-          <div className="h-full w-full bg-gray-300 rounded-xl">
-            {/* insert team members here */}
-          </div>
+        <div className="grid md:grid-cols-3 gap-4 min-h-[500px]">
+          <MemberCard
+            memberFirstName="Phat"
+            memberLastName="Le Huu"
+            memberPosition="Vice President"
+            memberImage="https://via.placeholder.com/1000" />
+          <MemberCard
+            memberFirstName="Phuoc"
+            memberLastName="Ngo Huu"
+            memberPosition="President"
+            memberImage="https://via.placeholder.com/1000" />
+          <MemberCard
+            memberFirstName="Uyen Ly"
+            memberLastName="Do Ngoc"
+            memberPosition="Vice President"
+            memberImage="https://via.placeholder.com/1000" />
         </div>
       </section>
 
