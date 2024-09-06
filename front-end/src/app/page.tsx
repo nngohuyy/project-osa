@@ -11,10 +11,9 @@ const gruppo = Space_Grotesk({
   variable: '--font-gruppo',
 });
 
-
 export default function Home() {
   return (
-    <main className={`${gruppo.variable} translate-y-[-74px] pb-40 flex flex-col space-y-40`}>
+    <main className={`${gruppo.variable} translate-y-[-75px] pb-40 flex flex-col space-y-40`}>
       <section className="home-top-card flex flex-col justify-center h-[100dvh]">
         <div className="max-w-screen-xl mx-auto px-6 md:px-14 xl:px-14">
           <div className="flex flex-col gap-5 md:w-2/3">

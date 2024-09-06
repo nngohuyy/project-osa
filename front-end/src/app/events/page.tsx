@@ -1,5 +1,7 @@
 'use client'
 
+import { Space_Grotesk } from 'next/font/google';
+
 import { Button, ButtonGroup } from "@nextui-org/react";
 import Card from "../../components/Card/Card";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,15 +13,21 @@ import 'swiper/css/pagination';
 
 import { EVENTS } from "../../constants/eventList";
 
+const gruppo = Space_Grotesk({
+  weight: "400",
+  subsets: ["latin"],
+  variable: '--font-gruppo',
+});
+
 export default function EventsPage() {
   return (
-    <main>
-      <div className="h-[calc(100vh-64px)] md:h-[94vh] mb-16">
+    <main className={`${gruppo.variable} translate-y-[-75px] pb-40 flex flex-col space-y-40 bg-[#F2F2F2]`}>
+      <div className="h-[100vh] mb-16">
         <div className="header">
           <div className="container max-w-screen-xl px-10 mt-auto mb-10 md:mb-[90px] text-center flex flex-col gap-6">
-            <div className="text-4xl lg:text-6xl font-bold">
+            <h1 className="home-section-heading !text-center">
               OISP International Festival 2024
-            </div>
+            </h1>
             <p className="mx-auto text-xl max-w-[640px]">
               OISP Student Ambassadors, established in 2015, aims at promoting the image of OISP students.
             </p>
@@ -34,14 +42,22 @@ export default function EventsPage() {
           </div>
         </div>
       </div>
-      <div className="section-content">
-        <h1>View recent OSA events</h1>
+      <div>
+        <h1 className="home-section-heading !text-center">View recent OSA events</h1>
         <Swiper
-          slidesPerView={5}
-          spaceBetween={20}
+          slidesPerView={'auto'}
           centeredSlides={true}
-          modules={[Navigation, Pagination]}
+          spaceBetween={20}
+          modules={[Pagination]}
         >
+          {EVENTS.eventList.map((event) => (
+            <SwiperSlide key={event.id}>
+              <Card
+                {
+                ...event}
+              />
+            </SwiperSlide>
+          ))}
           {EVENTS.eventList.map((event) => (
             <SwiperSlide key={event.id}>
               <Card

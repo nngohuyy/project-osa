@@ -3,7 +3,6 @@
 import './globals.css';
 import 'primeicons/primeicons.css';
 
-
 import { Metadata } from 'next'
 import { NextUIProvider } from "@nextui-org/react";
 import { Manrope } from "next/font/google";
@@ -33,7 +32,7 @@ export default function RootLayout({
       <body className={manrope.className}>
         <NextUIProvider>
           <NavBar />
-          <main className={`min-h-screen`}>
+          <main className={`min-h-screen bg-[#F2F2F2] text-[#262323]`}>
             {children}
           </main>
           <Footer />
