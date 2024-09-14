@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'SVN-Gilroy';
+  src: local('SVN-GilroyRegular.otf'), url('./assets/fonts/SVN-Gilroy/SVN-GilroyRegular.otf');
+}
