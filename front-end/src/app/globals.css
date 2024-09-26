@@ -15,16 +15,21 @@ body {
 }
 
 .home-section-heading {
-  @apply text-6xl mb-8 font-bold text-center md:text-left;
+  @apply text-body1 mb-8 font-bold text-center md:text-left;
 }
 
 h1 {
-  @apply mb-6 text-4xl font-bold;
+  @apply text-h1 font-bold;
+  font-family: var(--font-gruppo);
+}
+
+h2 {
+  @apply text-h2 font-bold;
   font-family: var(--font-gruppo);
 }
 
 h3, h4 {
-  @apply text-sm;
+  @apply text-body1;
 }
 
 h3 {
@@ -51,7 +56,7 @@ button {
 }
 
 .gallery-item {
-  @apply rounded-2xl bg-gray-100 flex flex-col grow shrink-0 basis-auto justify-between;
+  @apply rounded-2xl bg-white flex flex-col grow shrink-0 basis-auto justify-between;
 }
 
 .image {
@@ -59,7 +64,7 @@ button {
 }
 
 .line {
-  @apply w-full h-[2px] bg-gray-300 rounded-full;
+  @apply w-full h-[2px] bg-default rounded-full;
 }
 
 .mySwiper {

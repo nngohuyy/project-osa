@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function EventsLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="bg-white pb-40">
+    <div className="bg-white">
       {children}
     </div>
   )

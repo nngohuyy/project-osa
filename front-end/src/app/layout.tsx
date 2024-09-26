@@ -4,16 +4,34 @@ import './globals.css';
 import 'primeicons/primeicons.css';
 
 import { Metadata } from 'next'
+import localFont from 'next/font/local';
 import { NextUIProvider } from "@nextui-org/react";
 import { Manrope } from "next/font/google";
 
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 
-const manrope = Manrope({
-  subsets: ["latin"],
-  variable: '--font-manrope',
-});
+const gilroy = localFont({
+  src: [
+    {
+      path: '../../public/fonts/SVN-Gilroy/SVN-GilroyRegular.otf',
+      weight: '400',
+    },
+    {
+      path: '../../public/fonts/SVN-Gilroy/SVN-GilroyMedium.otf',
+      weight: '500',
+    },
+    {
+      path: '../../public/fonts/SVN-Gilroy/SVN-GilroySemiBold.otf',
+      weight: '600',
+    },
+    {
+      path: '../../public/fonts/SVN-Gilroy/SVN-GilroyBold.otf',
+      weight: '700',
+    }
+  ],
+  variable: '--font-gilroy',
+})
 
 // export const metadata: Metadata = {
 //   title: 'Home',
@@ -29,7 +47,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={manrope.className}>
+      <body className={`${gilroy.variable} font-sans`}>
         <NextUIProvider>
           <NavBar />
           <main className={`min-h-screen bg-[#F2F2F2] text-[#262323]`}>

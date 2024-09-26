@@ -14,36 +14,31 @@ import 'swiper/css/pagination';
 import { EVENTS } from "../../constants/eventList";
 
 const gruppo = Space_Grotesk({
-  weight: "400",
+  weight: "700",
   subsets: ["latin"],
   variable: '--font-gruppo',
 });
 
 export default function EventsPage() {
   return (
-    <main className={`${gruppo.variable} translate-y-[-75px] pb-40 flex flex-col space-y-40 bg-[#F2F2F2]`}>
-      <div className="h-[100vh] mb-16">
-        <div className="header">
-          <div className="container max-w-screen-xl px-10 mt-auto mb-10 md:mb-[90px] text-center flex flex-col gap-6">
-            <h1 className="home-section-heading !text-center">
-              OISP International Festival 2024
-            </h1>
-            <p className="mx-auto text-xl max-w-[640px]">
-              OISP Student Ambassadors, established in 2015, aims at promoting the image of OISP students.
+    <main className={`${gruppo.variable} translate-y-[-75px] flex flex-col bg-[#F2F2F2]`}>
+
+      <div className='h-[760px] flex flex-col justify-end bg-white'>
+        <div className='px-14 py-10'>
+          <div className='w-[640px] mx-auto flex flex-col items-center gap-5'>
+            <h1 className='leading-[60px] text-center'>OISP INTERNATIONAL FESTIVAL 2024</h1>
+            <p className='text-center text-[20px] leading-6'>
+              The OISP International Festival 2024, themed "Luminary," took place on April 6th at the University of Technology in Ho Chi Minh City. This magical event featured traditional costume performances, national item exhibitions, and music festivals, attracting over 400 young people to celebrate and experience diverse cultures.
             </p>
-            <div className="flex gap-4 items-center justify-center">
-              <Button color="primary" variant="solid" className="border-2">
-                Register now
-              </Button>
-              <Button color="primary" variant="faded">
-                Learn more
-              </Button>
-            </div>
+            <button className={`${gruppo.variable} mt-2`}>
+                Watch the recap
+              </button>
           </div>
         </div>
       </div>
-      <div>
-        <h1 className="home-section-heading !text-center">View recent OSA events</h1>
+
+      <div className='py-20 flex flex-col items-center'>
+        <h2 className='pb-5'>Our past events</h2>
         <Swiper
           slidesPerView={'auto'}
           centeredSlides={true}
