@@ -28,16 +28,17 @@ h2 {
   font-family: var(--font-gruppo);
 }
 
-h3, h4 {
-  @apply text-body1;
+h5 {
+  @apply font-bold text-h5 leading-6;
+  font-family: var(--font-gruppo);
 }
 
-h3 {
-  @apply font-bold;
+.body1 {
+  @apply text-body1 leading-[20px];
 }
 
-a {
-  /* @apply text-blue-500; */
+.body2 {
+  @apply text-body2 leading-[18px];
 }
 
 button {
@@ -60,7 +61,7 @@ button {
 }
 
 .image {
-  @apply rounded-2xl aspect-square w-full object-cover object-center;
+  @apply rounded-2xl object-cover object-center;
 }
 
 .line {

@@ -50,7 +50,7 @@ export default function RootLayout({
       <body className={`${gilroy.variable} font-sans`}>
         <NextUIProvider>
           <NavBar />
-          <main className={`min-h-screen bg-[#F2F2F2] text-[#262323]`}>
+          <main>
             {children}
           </main>
           <Footer />
