@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#F2F2F2] text-[#262323];
+  @apply bg-[#E4E4E7];
   font-size: 1.125rem;
 }
 

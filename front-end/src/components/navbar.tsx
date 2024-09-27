@@ -22,7 +22,7 @@ export default function NavBar() {
     document.getElementById("MobileMenu").classList.add("hidden");
   }
   return (
-    <nav className="bg-white border shadow-solid border-black rounded-2xl sticky top-3 z-50 max-w-screen-xl w-[calc(100%-24px)] mx-auto">
+    <nav className="bg-white border shadow-solid border-black rounded-2xl sticky top-5 z-50 max-w-screen-xl w-[calc(100%-24px)] mx-auto">
       <div id='NavBar' className="max-w-screen-xl mx-auto px-6 md:px-14 xl:px-14 py-4 flex justify-between items-center">
         <div className="flex items-center">
           <Link onPressStart={closeMobileMenu} href="/">

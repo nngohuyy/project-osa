@@ -6,7 +6,7 @@ import { Space_Grotesk } from 'next/font/google';
 import MemberCard from "../components/MemberCard";
 
 const gruppo = Space_Grotesk({
-  weight: "400",
+  weight: "700",
   subsets: ["latin"],
   variable: '--font-gruppo',
 });
@@ -14,12 +14,14 @@ const gruppo = Space_Grotesk({
 export default function Home() {
   return (
     <main className={`${gruppo.variable} translate-y-[-75px] pb-40 flex flex-col space-y-40`}>
-      <section className="home-top-card flex flex-col justify-center h-[100dvh]">
-        <div className="max-w-screen-xl mx-auto px-6 md:px-14 xl:px-14">
-          <div className="flex flex-col gap-5 md:w-2/3">
-            <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl">We are<br />OISP Student<br />Ambassadors.</h1>
-            <p>
-              We are a group of enthusiastic students who are passionate about promoting the image of OISP students. We are here to support you in your journey at HCMUT.
+      <section className="home-top-card flex flex-col justify-end h-[100dvh]">
+        <div className="max-w-screen-xl mx-auto px-14 py-24">
+          <div className="flex flex-col gap-5 w-1/2">
+            <h1 className="font-bold text-h1 leading-[60px]">
+              We are<br />OISP Student<br />Ambassadors.
+            </h1>
+            <p className="text-h5 leading-[26px]">
+              Established in 2015, the OISP Student Ambassadors Club actively promotes the positive image of OISP students. The club acts as a bridge between OISP and the student body, fostering connections between Vietnamese and international students, and facilitating engagement between students and potential employers.
             </p>
           </div>
           <button className={`${gruppo.variable} mt-10`}>
