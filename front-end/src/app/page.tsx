@@ -5,6 +5,8 @@ import Image from "next/image";
 import { Space_Grotesk } from 'next/font/google';
 import MemberCard from "../components/MemberCard";
 
+import { DESCRIPTION } from '@constants/descriptions';
+
 const gruppo = Space_Grotesk({
   weight: "700",
   subsets: ["latin"],
@@ -21,7 +23,7 @@ export default function Home() {
               We are<br />OISP Student<br />Ambassadors.
             </h1>
             <p className="text-h5 leading-[26px]">
-              Established in 2015, the OISP Student Ambassadors Club actively promotes the positive image of OISP students. The club acts as a bridge between OISP and the student body, fostering connections between Vietnamese and international students, and facilitating engagement between students and potential employers.
+              {DESCRIPTION.about_us_long}
             </p>
           </div>
           <button className={`${gruppo.variable} mt-10`}>
@@ -34,7 +36,7 @@ export default function Home() {
         <div className="md:w-1/2">
           <h1 className="home-section-heading">Our mission</h1>
           <p className="text-center md:text-left">
-            We aim at promoting the image of OISP students and being a bridge between OISP and students, between Vietnamese students and international student, and between students and employers.
+            {DESCRIPTION.about_us_short}
           </p>
         </div>
         <div className="md:w-1/2 h-[200px] bg-gray-300 rounded-xl">
@@ -63,7 +65,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-screen-xl mx-auto px-6 md:px-14 xl:px-14 w-full flex flex-col-reverse flex-col md:flex-row gap-10">
+      <section className="max-w-screen-xl mx-auto px-6 md:px-14 xl:px-14 w-full flex flex-col-reverse md:flex-row gap-10">
         <div className="md:w-1/2 min-h-96 bg-gray-300 rounded-xl">
           {/* insert image here */}
         </div>

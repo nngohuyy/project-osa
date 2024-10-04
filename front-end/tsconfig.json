@@ -17,10 +17,20 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      // PAGES
+      "@articles/*" : ["src/app/articles/*"],
+      "@contact/*": ["src/app/contact/*"],
+      "@events/*": ["src/app/events/*"],
+      // FOLDERS
+      "@components/*": ["src/components/*"],
+      "@constants/*": ["src/constants/*"],
+      "@app/*": ["src/app/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@lib/*": ["src/lib/*"],
+      "@utils/*": ["src/utils/*"],
+      "@public/*": ["public/*"],
     },
+    "baseUrl": ".",
     "plugins": [
       {
         "name": "next"
