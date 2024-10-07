@@ -1,0 +1,10 @@
+.header {
+  @apply flex flex-col w-full h-full text-white;
+  background-image: linear-gradient(to bottom, transparent 0%, #000000bd 70%, #000000 95%), url(/eventsPage_cover.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.home-section-heading {
+  @apply text-base mb-8 font-bold text-center md:text-left;
+}

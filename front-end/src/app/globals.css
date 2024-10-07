@@ -7,35 +7,56 @@ body {
   font-size: 1.125rem;
 }
 
-.header {
-  @apply flex flex-col w-full h-full text-white;
-  background-image: linear-gradient(to bottom, transparent 0%, #000000bd 70%, #000000 95%), url(/eventsPage_cover.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.home-section-heading {
-  @apply text-body1 mb-8 font-bold text-center md:text-left;
-}
-
 h1 {
-  @apply text-h1 font-bold font-mono;
+  @apply text-5xl leading-7xl font-bold font-mono;
 }
 
 h2 {
-  @apply text-h2 font-bold font-mono;
+  @apply text-4xl leading-6xl font-bold font-mono;
+}
+
+h3 {
+  @apply text-3xl leading-5xl font-bold font-mono;
+}
+
+h4 {
+  @apply text-2xl leading-4xl font-bold font-mono;
 }
 
 h5 {
-  @apply font-bold text-h5 leading-6 font-mono;
+  @apply text-xl leading-3xl font-bold font-mono;
+}
+
+h6 {
+  @apply text-lg leading-2xl font-bold font-mono;
 }
 
 .body1 {
-  @apply text-body1 leading-[20px];
+  @apply text-base leading-xl font-normal font-sans;
 }
 
 .body2 {
-  @apply text-body2 leading-[18px];
+  @apply text-sm leading-lg font-normal font-sans;
+}
+
+.subtitle1 {
+  @apply text-base leading-xl font-bold font-sans;
+}
+
+.subtitle2 {
+  @apply text-sm leading-lg font-bold font-sans;
+}
+
+.caption1 {
+  @apply text-xs leading-base font-normal font-sans;
+}
+
+.caption2 {
+  @apply text-xs leading-base font-bold font-sans italic;
+}
+
+.footnote {
+  @apply text-xxs leading-sm font-normal font-sans;
 }
 
 button {

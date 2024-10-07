@@ -1,5 +1,7 @@
 'use client'
 
+import './homepage.module.css';
+
 import { Space_Grotesk } from 'next/font/google';
 import MemberCard from "../components/MemberCard";
 

@@ -6,8 +6,8 @@ import 'primeicons/primeicons.css';
 import { NextUIProvider } from "@nextui-org/react";
 import { Manrope, Space_Mono } from "next/font/google";
 
-import NavBar from "../components/navbar";
-import Footer from "../components/footer";
+import NavBar from "@components/NavBar/navbar";
+import Footer from "@components/Footer/footer";
 
 const manrope = Manrope({
   weight: ["400", "500", "600", "700"],

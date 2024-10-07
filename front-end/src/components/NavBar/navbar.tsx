@@ -11,15 +11,15 @@ const gruppo = Space_Grotesk({
 import React from "react";
 import { Link, Button } from "@nextui-org/react";
 
-import { OSALogo } from "./OSALogo";
-import { ROUTES } from "../constants/navigationRoutes";
+import { OSALogo } from "@components/OSALogo";
+import { ROUTES } from "@constants/navigationRoutes";
 
 export default function NavBar() {
   const openMobileMenu = () => {
-    document.getElementById("MobileMenu").classList.toggle("hidden");
+    document.getElementById("MobileMenu")?.classList.toggle("hidden");
   }
   const closeMobileMenu = () => {
-    document.getElementById("MobileMenu").classList.add("hidden");
+    document.getElementById("MobileMenu")?.classList.add("hidden");
   }
   return (
     <nav className="bg-white border shadow-solid border-black rounded-2xl sticky top-5 z-50 max-w-screen-xl w-[calc(100%-24px)] mx-auto">
