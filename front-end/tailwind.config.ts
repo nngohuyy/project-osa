@@ -48,8 +48,8 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        sans: ['var(--font-gilroy)'],
-        mono: ['var(--font-gruppo)'],
+        sans: 'var(--font-manrope)',
+        mono: 'var(--font-space-grotesk)',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

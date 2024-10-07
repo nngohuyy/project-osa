@@ -1,21 +1,13 @@
 'use client'
 
-import { Button } from "@nextui-org/react";
-import Image from "next/image";
 import { Space_Grotesk } from 'next/font/google';
 import MemberCard from "../components/MemberCard";
 
 import { DESCRIPTION, SAMPLE } from '@constants/descriptions';
 
-const gruppo = Space_Grotesk({
-  weight: "700",
-  subsets: ["latin"],
-  variable: '--font-gruppo',
-});
-
 export default function Home() {
   return (
-    <main className={`${gruppo.variable} translate-y-[-75px] pb-40 flex flex-col space-y-40`}>
+    <main className={`translate-y-[-75px] pb-40 flex flex-col space-y-40`}>
       <section className="home-top-card flex flex-col justify-end h-[100dvh]">
         <div className="max-w-screen-xl mx-auto px-14 py-24">
           <div className="flex flex-col gap-5 w-1/2">
@@ -26,7 +18,7 @@ export default function Home() {
               {DESCRIPTION.about_us_long}
             </p>
           </div>
-          <button className={`${gruppo.variable} mt-10`}>
+          <button className={`mt-10`}>
             Learn more
           </button>
         </div>

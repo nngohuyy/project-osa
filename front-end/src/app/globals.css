@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#E4E4E7];
+  @apply bg-[#E4E4E7] font-sans;
   font-size: 1.125rem;
 }
 
@@ -19,18 +19,15 @@ body {
 }
 
 h1 {
-  @apply text-h1 font-bold;
-  font-family: var(--font-gruppo);
+  @apply text-h1 font-bold font-mono;
 }
 
 h2 {
-  @apply text-h2 font-bold;
-  font-family: var(--font-gruppo);
+  @apply text-h2 font-bold font-mono;
 }
 
 h5 {
-  @apply font-bold text-h5 leading-6;
-  font-family: var(--font-gruppo);
+  @apply font-bold text-h5 leading-6 font-mono;
 }
 
 .body1 {
@@ -42,8 +39,7 @@ h5 {
 }
 
 button {
-  @apply px-6 py-1.5 translate-y-[-2px] bg-[#3B7CF3] text-black hover:bg-[#0309A8] hover:text-white rounded-md border-2 border-black shadow-solid hover:shadow-none font-bold ease-out hover:translate-y-[0px] duration-[0.15s];
-  font-family: var(--font-gruppo);
+  @apply font-mono px-6 py-1.5 translate-y-[-2px] bg-[#3B7CF3] text-black hover:bg-[#0309A8] hover:text-white rounded-md border-2 border-black shadow-solid hover:shadow-none font-bold ease-out hover:translate-y-[0px] duration-[0.15s];
   font-size: 1.125rem;
 }
 
