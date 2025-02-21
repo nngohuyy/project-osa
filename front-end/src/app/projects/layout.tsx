@@ -5,9 +5,9 @@ export const metadata: Metadata = {
   description: "OSA's page with information about upcoming events and activities.",
 };
 
-export default function EventsLayout({ children }: { children: React.ReactNode }) {
+export default function ProjectsLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="bg-white">
+    <div>
       {children}
     </div>
   )

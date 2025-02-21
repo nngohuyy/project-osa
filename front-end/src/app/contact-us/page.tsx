@@ -1,9 +1,9 @@
 'use client'
 
 import Image from 'next/image';
-import osa_gen10th_brush from "@/public/osa_gen10th_brush.svg";
+import osa_gen10th_brush from "/public/osa_gen10th_brush.png";
 
-export default function ContactPage() {
+export default function ContactUsPage() {
   return (
     <main className='max-w-screen-xl mx-auto my-10 lg:my-0'>
       <div className='flex justify-center px-5 items-center lg:h-[calc(100vh-64px)]'>

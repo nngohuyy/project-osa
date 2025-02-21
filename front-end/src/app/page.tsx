@@ -1,24 +1,21 @@
 'use client'
-
 import './homepage.module.css';
-
-import { Space_Grotesk } from 'next/font/google';
 import MemberCard from "../components/MemberCard";
 
 import { DESCRIPTION, SAMPLE } from '@constants/descriptions';
 
 export default function Home() {
   return (
-    <main className={`translate-y-[-75px] pb-40 flex flex-col space-y-40`}>
+    <main className={`translate-y-[-75px] flex flex-col space-y-32`}>
       <section className="home-top-card flex flex-col justify-end h-[100dvh]">
         <div className="max-w-screen-xl mx-auto px-14 py-24">
           <div className="flex flex-col gap-5 w-1/2">
-            <h1 className="font-bold text-h1 leading-[60px]">
-              We are<br />OISP Student<br />Ambassadors.
+            <h1 className='leading-none text-7xl'>
+              We are OISP Student Ambassadors.
             </h1>
-            <p className="text-h5 leading-[26px]">
+            <h6 className='font-normal'>
               {DESCRIPTION.about_us_long}
-            </p>
+            </h6>
           </div>
           <button className={`mt-10`}>
             Learn more

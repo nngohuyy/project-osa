@@ -17,7 +17,7 @@ function MemberCard({memberFirstName, memberLastName, memberPosition, memberImag
         width={0} height={0}
         sizes="100vw"
         style={{ width: '100%', height: 'auto' }} />
-      <p className="font-extrabold text-5xl uppercase">{memberFirstName}<br />{memberLastName}</p>
+      <p className="font-extrabold leading-none text-5xl uppercase">{memberFirstName}<br />{memberLastName}</p>
       <p className="bg-black font-extrabold text-white text-2xl p-3">{memberPosition}</p>
     </main>
   );

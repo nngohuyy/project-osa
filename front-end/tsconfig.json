@@ -18,9 +18,9 @@
     "incremental": true,
     "paths": {
       // PAGES
-      "@articles/*" : ["src/app/articles/*"],
-      "@contact/*": ["src/app/contact/*"],
-      "@events/*": ["src/app/events/*"],
+      "@articles/*" : ["src/app/news-and-stories/*"],
+      "@contact/*": ["src/app/contact-us/*"],
+      "@events/*": ["src/app/projects/*"],
       // FOLDERS
       "@components/*": ["src/components/*"],
       "@constants/*": ["src/constants/*"],

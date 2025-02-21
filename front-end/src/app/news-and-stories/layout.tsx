@@ -5,9 +5,9 @@ export const metadata: Metadata = {
   description: "OSA's page with articles and news.",
 };
 
-export default function NewsLayout({ children }: { children: React.ReactNode }) {
+export default function NewsAndStoriesLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="bg-white pb-40">
+    <div>
       {children}
     </div>
   );

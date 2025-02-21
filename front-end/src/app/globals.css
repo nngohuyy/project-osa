@@ -3,64 +3,63 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#E4E4E7] font-sans;
-  font-size: 1.125rem;
+  @apply bg-[#FAF8F6] text-black;
 }
 
 h1 {
-  @apply text-5xl leading-7xl font-bold font-mono;
+  @apply text-5xl mb-5 font-bold;
 }
 
 h2 {
-  @apply text-4xl leading-6xl font-bold font-mono;
+  @apply text-4xl font-bold;
 }
 
 h3 {
-  @apply text-3xl leading-5xl font-bold font-mono;
+  @apply text-3xl font-bold;
 }
 
 h4 {
-  @apply text-2xl leading-4xl font-bold font-mono;
+  @apply text-2xl font-bold;
 }
 
 h5 {
-  @apply text-xl leading-3xl font-bold font-mono;
+  @apply text-xl font-bold;
 }
 
 h6 {
-  @apply text-lg leading-2xl font-bold font-mono;
+  @apply text-lg font-bold;
 }
 
 .body1 {
-  @apply text-base leading-xl font-normal font-sans;
+  @apply text-base font-normal;
 }
 
 .body2 {
-  @apply text-sm leading-lg font-normal font-sans;
+  @apply text-tiny font-normal;
 }
 
 .subtitle1 {
-  @apply text-base leading-xl font-bold font-sans;
+  @apply text-base font-bold;
 }
 
 .subtitle2 {
-  @apply text-sm leading-lg font-bold font-sans;
+  @apply text-sm font-bold;
 }
 
 .caption1 {
-  @apply text-xs leading-base font-normal font-sans;
+  @apply text-sm font-normal;
 }
 
 .caption2 {
-  @apply text-xs leading-base font-bold font-sans italic;
+  @apply text-sm font-bold italic;
 }
 
 .footnote {
-  @apply text-xxs leading-sm font-normal font-sans;
+  @apply text-sm font-normal;
 }
 
 button {
-  @apply font-mono px-6 py-1.5 translate-y-[-2px] bg-[#3B7CF3] text-black hover:bg-[#0309A8] hover:text-white rounded-md border-2 border-black shadow-solid hover:shadow-none font-bold ease-out hover:translate-y-[0px] duration-[0.15s];
+  @apply  px-6 py-1.5 translate-y-[-2px] bg-[#3B7CF3] text-black hover:bg-[#0309A8] hover:text-white rounded-md border-2 border-black shadow-solid hover:shadow-none font-bold ease-out hover:translate-y-[0px] duration-[0.15s];
   font-size: 1.125rem;
 }
 

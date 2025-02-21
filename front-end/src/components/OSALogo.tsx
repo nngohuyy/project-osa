@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import logo from "/public/osaX-horizontal.svg";
+import logo from "/public/osa_horizontal_blue.svg";
 
 export const OSALogo = () => (
     <Image

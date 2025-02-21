@@ -5,6 +5,6 @@ export const metadata: Metadata = {
   description: "OSA's page with contact information.",
 };
 
-export default function ContactLayout({ children }: { children: React.ReactNode }) {
+export default function ContactUsLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }
