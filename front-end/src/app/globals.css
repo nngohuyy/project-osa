@@ -85,8 +85,15 @@ button {
   height: 100%;
 }
 
-.swiper-slide{
+.swiper-slide {
   width: 340px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide-2 {
+  width: 800px !important;
   display: flex;
   justify-content: center;
   align-items: center;

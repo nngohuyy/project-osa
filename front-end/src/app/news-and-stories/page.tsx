@@ -9,6 +9,16 @@ import { EVENTS } from "../../constants/eventList";
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
 
+function HighlightedPost() {
+  return (
+    <div className="">
+      <Image className="rounded-2xl" src="https://picsum.photos/800/480" alt="hero" width={800} height={480} />
+      <h4 className="font-medium mt-3 mb-0">OSA Lunar New Year 2025: The Spirit of Tet</h4>
+      <p className="opacity-50">Simply being together is enough to make Tet exciting!</p>
+    </div>
+  );
+}
+
 export default function NewsAndStoriesPage() {
   return (
     <main className="translate-y-[-75px] flex flex-col mt-40">
@@ -25,36 +35,26 @@ export default function NewsAndStoriesPage() {
           </div>
         </div>
         <div className="mb-20">
-          <div className="">
-            <Image className="rounded-2xl" src="https://picsum.photos/800/480" alt="hero" width={800} height={480} />
-            <h4 className="font-medium mt-3 mb-0">OSA Lunar New Year 2025: The Spirit of Tet</h4>
-            <p className="opacity-50">Simply being together is enough to make Tet exciting!</p>
-          </div>
+          <Swiper
+            pagination={{
+              clickable: true,
+            }}
+            slidesPerView={'auto'}
+            spaceBetween={30}
+            modules={[Navigation, History]}
+            navigation={{
+              nextEl: "#nextBtn",
+              prevEl: "#prevBtn",
+            }}
+            className="mySwiper-2"
+          >
+            {Array.from({ length: 10 }).map((_, index) => (
+              <SwiperSlide className="swiper-slide-2" key={index}>
+                <HighlightedPost />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-        <Swiper
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Navigation, History]}
-          history={{
-            key: 'slide',
-          }}
-          navigation={{
-            nextEl: "#nextBtn",
-            prevEl: "#prevBtn",
-          }}
-          className="mySwiper"
-        >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
-        </Swiper>
         <div className="flex flex-col gap-10">
           <div className="grid grid-cols-2 gap-10">
             {EVENTS.eventList.map((event) => (
