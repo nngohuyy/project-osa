@@ -27,6 +27,9 @@ export default function Footer() {
                   <a href="https://www.youtube.com/@oispstudentambassadors2015" className="text-2xl">
                     <i className="pi pi-youtube text-[2rem] hover:text-[#FF0000]"></i>
                   </a>
+                  <a href="https://www.youtube.com/@oispstudentambassadors2015" className="text-2xl">
+                    <i className="pi pi-tiktok text-[2rem] hover:text-[#2AF0EA]"></i>
+                  </a>
                 </div>
               </div>
             </div>

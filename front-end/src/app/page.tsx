@@ -62,7 +62,7 @@ export default function Home() {
         </div>
         <div className="md:w-1/2">
           <h1 className="home-section-heading">Our statement</h1>
-          <div className="flex flex-col space-y-5">
+          <div className="flex flex-col">
             <p className="text-center md:text-left">
               {SAMPLE.lorem_70}
             </p>

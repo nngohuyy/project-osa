@@ -16,7 +16,7 @@
     "primeicons": "^7.0.0",
     "react": "^18",
     "react-dom": "^18",
-    "swiper": "^11.0.7"
+    "swiper": "^11.2.4"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -70,6 +70,9 @@ const config: Config = {
         'elevation4': '0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.30)',
         'elevation5': '0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30)',
       },
+      fontFamily: {
+        sans: ['GeneralSans-Variable', 'sans-serif'],
+      },
     },
   },
   darkMode: "class",

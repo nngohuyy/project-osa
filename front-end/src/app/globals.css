@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('general-sans.css');
+
 body {
-  @apply bg-[#FAF8F6] text-black;
+  @apply bg-[#FAF8F6] text-black font-sans;
 }
 
 h1 {
@@ -58,9 +60,13 @@ h6 {
   @apply text-sm font-normal;
 }
 
+p {
+  @apply text-base font-normal mb-4;
+}
+
 button {
   @apply  px-6 py-1.5 translate-y-[-2px] bg-[#3B7CF3] text-black hover:bg-[#0309A8] hover:text-white rounded-md border-2 border-black shadow-solid hover:shadow-none font-bold ease-out hover:translate-y-[0px] duration-[0.15s];
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .section-about {
