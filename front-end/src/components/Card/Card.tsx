@@ -1,6 +1,7 @@
 'use client'
 
-import { Button, ButtonGroup } from '@nextui-org/react'
+import Link from 'next/link';
+import { generateSlug } from '@utils/utils';
 
 type CardProps = {
   id: number;
@@ -33,21 +34,24 @@ function Card({ eventDate, eventDescription, eventImage, eventName }: CardProps)
 }
 
 function CardBlog({ eventDate, eventDescription, eventImage, eventName }: CardProps) {
+  const url = `/news-and-stories/${generateSlug(eventName)}`;
   return (
-    <main className='group flex flex-col bg-inherit hover:bg-white transition duration-500 ease-in-out rounded-2xl overflow-hidden'>
-      <div className='h-[240px] w-full rounded-2xl group-hover:rounded-none duration-200 ease-out overflow-hidden items-center justify-center flex'>
-        <img className="image" src={eventImage} alt='' />
-      </div>
-      <div className="group relative">
-        <div className="py-5 transition-[padding] duration-200 ease-out group-hover:px-5">
-          <div className="flex flex-col gap-2">
-            <h5 className="font-semibold leading-[1.15]">{eventName}</h5>
-            <p className="body1! leading-none">{eventDate}</p>
-          </div>
-          <p className="text-lg line-clamp-2 overflow-hidden text-ellipsis">{eventDescription}</p>
+    <Link href={url}>
+      <main className='group flex flex-col bg-inherit hover:bg-white transition duration-500 ease-in-out rounded-2xl overflow-hidden'>
+        <div className='h-[240px] w-full rounded-2xl group-hover:rounded-none duration-200 ease-out overflow-hidden items-center justify-center flex'>
+          <img className="image" src={eventImage} alt='' />
         </div>
-      </div>
-    </main>
+        <div className="group relative">
+          <div className="py-5 transition-[padding] duration-200 ease-out group-hover:px-5">
+            <div className="flex flex-col gap-2">
+              <h5 className="font-semibold leading-[1.15]">{eventName}</h5>
+              <p className="body1! leading-none">{eventDate}</p>
+            </div>
+            <p className="text-lg line-clamp-2 overflow-hidden text-ellipsis">{eventDescription}</p>
+          </div>
+        </div>
+      </main>
+    </Link>
   );
 }
 
