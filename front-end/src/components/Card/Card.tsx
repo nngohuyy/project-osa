@@ -44,7 +44,7 @@ function CardBlog({ eventDate, eventDescription, eventImage, eventName }: CardPr
         <div className="group relative">
           <div className="py-5 transition-[padding] duration-200 ease-out group-hover:px-5">
             <div className="flex flex-col gap-2">
-              <h5 className="font-semibold leading-[1.15]">{eventName}</h5>
+              <h5 className="font-semibold leading-[1.15] line-clamp-2 overflow-hidden text-ellipsis">{eventName}</h5>
               <p className="body1! leading-none">{eventDate}</p>
             </div>
             <p className="text-lg line-clamp-2 overflow-hidden text-ellipsis">{eventDescription}</p>

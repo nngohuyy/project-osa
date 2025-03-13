@@ -1,16 +1,35 @@
+import { CardBlog } from "@components/Card/Card";
 import { EVENTS } from "@constants/eventList";
 import { generateSlug } from "@utils/utils";
 
 export default async function PostPage({ params, }: { params: Promise<{ post: string }> }) {
   const { post } = await params;
+  const category = ['events', 'university life'];
   const event = EVENTS.eventList.find((event) => generateSlug(event.eventName) === post);
   return (
     <div className="translate-y-[-75px] flex flex-col">
       <figure className="h-[70vh] w-full relative">
         <img src={event?.eventImage} alt={event?.eventName} className="w-full h-full object-cover" />
       </figure>
-      <div className="max-w-screen-md mx-auto px-6 md:px-14 xl:px-14 flex flex-col items-center mt-20">
-        <h1 className="leading-none md:text-7xl mb-20">{event?.eventName}</h1>
+      <div className="max-w-screen-xl w-full mx-auto px-6 md:px-14 xl:px-14 flex justify-between items-center pt-6">
+        <p className="text-lg text-muted">Mar 13, 2025 - 8 min.</p>
+        <i className="pi pi-facebook text-2xl text-[#d1d5db] hover:text-[#4b5563]"></i>
+      </div>
+      <div className="max-w-screen-md mx-auto px-6 md:px-14 xl:px-14 flex flex-col items-start mt-20">
+        <p className="uppercase tracking-widest font-bold">
+          {category
+            .map((topic, index) => (
+              <span key={index} className="hover:underline underline-offset-8">{topic}</span>
+            ))
+            .reduce((prev, curr) => <>{prev}<span key={`dash-${prev.key}`} className="mx-1">-</span>{curr}</>)}
+        </p>
+        <div className="mb-20">
+          <h1 className="leading-none md:text-7xl">{event?.eventName}</h1>
+          <p className="text-lg">
+            OISP International Festival 2024: Luminary celebrates cultural diversity, unity, and student talent through mesmerizing performances, global cuisine, and interactive workshops.
+          </p>
+          <p className="text-[#4b5563]">By <span>Tran Thuy Tien</span></p>
+        </div>
         <div>
           <p className="text-lg">
             The OISP International Festival 2024 is back, bigger and brighter than ever! This year’s theme, Luminary, celebrates the brilliance of cultural diversity, unity, and the vibrant talents of students at the Office for International Study Programs (OISP). As one of the most anticipated events of the year, the festival promises an unforgettable experience filled with performances, culinary delights, and engaging activities that showcase the essence of global cultures.
@@ -41,6 +60,17 @@ export default async function PostPage({ params, }: { params: Promise<{ post: st
             So, mark your calendars and get ready to shine at OISP International Festival 2024: Luminary! Whether you’re performing, showcasing your country’s traditions, or simply enjoying the festivities, this is a celebration you won’t want to miss. Stay tuned for more updates on event schedules, participating clubs, and special performances. Let’s light up the world together!
           </p>
         </div>
+      </div>
+      <div className="max-w-screen-xl mx-auto px-6 md:px-14 xl:px-14 flex flex-col justify-center items-center mt-32">
+        <h1 className="mb-10">Read more</h1>
+        <div className="grid grid-cols-3 gap-10">
+            {EVENTS.eventList.slice(0, 3).map((event) => (
+              <CardBlog key={event.id}
+                {
+                ...event}
+              />
+            ))}
+          </div>
       </div>
     </div>
   )

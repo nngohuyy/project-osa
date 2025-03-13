@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "OSA | About us",
+  description: "OSA's page with information about upcoming events and activities.",
+};
+
 export default function AboutUsPage() {
   return (
     <main className="translate-y-[-75px] flex flex-col mt-40">

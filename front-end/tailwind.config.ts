@@ -25,7 +25,7 @@ const config: Config = {
       'white' : '#FFFFFF',
       'black' : '#1D1C1A',
       'background': '#FAF8F6',
-      'muted': '#E4E4E7',
+      'muted': '#6A6A69',
       'default': '#01001D',
       'primary': '#244AD0',
       'secondary': '#9333EA',

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "OSA | Events",
+  title: "OSA | Projects",
   description: "OSA's page with information about upcoming events and activities.",
 };
 
