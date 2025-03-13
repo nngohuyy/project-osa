@@ -21,7 +21,7 @@ export default function ProjectsPage() {
               {`The OISP International Festival 2024, themed "Luminary," took place on April 6th at the University of Technology in Ho Chi Minh City. This magical event featured traditional costume performances, national item exhibitions, and music festivals, attracting over 400 young people to celebrate and experience diverse cultures.`}
             </h6>
             <Link
-              href='https://www.facebook.com/OISPInternationalFestival/posts/pfbid0C4pj6RVJZxs6qF1MX4gNSQgbqFCPPawQeS6xSkwaQi83iZeYAYb7bTPuewUUZzuZl'
+              href='https://www.facebook.com/InternationalConnectionFestival/posts/pfbid02tp1FupmXwhJWRb4aZFtvPeeY2EVd64YELXHiNvPHToqvFxEGiSpo5XhocbvSA7f4l'
               target="_blank"
             >
               <button className={`mt-2`}>
@@ -32,7 +32,7 @@ export default function ProjectsPage() {
         </div>
       </div>
       <div className='flex flex-col items-center mt-16'>
-        <h1>Our past events</h1>
+        <h1>Our past projects</h1>
         <Swiper
           slidesPerView={'auto'}
           centeredSlides={true}
