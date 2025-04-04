@@ -12,7 +12,12 @@ export default function Footer() {
           <div className='flex flex-row justify-between gap-[240px]'>
             <div className='flex flex-col gap-10'>
               <p>
-                Established in 2015, the OISP Student Ambassadors Club actively promotes the positive image of OISP students. The club acts as a bridge between OISP and the student body, fostering connections between Vietnamese and international students, and facilitating engagement between students and potential employers.
+                Established in 2015, the OISP Student Ambassadors Club
+                actively promotes the positive image of OISP students.
+                The club acts as a bridge between OISP and the student body,
+                fostering connections between Vietnamese and international
+                students, and facilitating engagement between students and
+                potential employers.
               </p>
               <div>
                 <p className='font-bold'>Follow us on social media!</p>
