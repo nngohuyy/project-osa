@@ -5,11 +5,19 @@ type MemberCardProps = {
   memberLastName: string;
   memberPosition: string;
   memberImage: string;
+  marginTop?: string;
 }
 
-function MemberCard({ memberFirstName, memberLastName, memberPosition, memberImage }: MemberCardProps) {
+function MemberCard({ memberFirstName, memberLastName, memberPosition, memberImage, marginTop }: MemberCardProps) {
   return (
-    <main className="group p-10 flex flex-col gap-6 border-3 border-black bg-white rounded-tl-3xl rounded-br-3xl hover:bg-black hover:text-white transition duration-500 ease-in-out transform group-hover:-translate-y-1 hover:scale-105">
+    <main
+      className={`group p-10 h-fit flex flex-col gap-6 border-3 border-black bg-white
+                  rounded-tl-3xl rounded-br-3xl hover:bg-black hover:text-white
+                  transition duration-500 ease-in-out
+                  transform group-hover:-translate-y-1 hover:scale-105
+                  ${marginTop ? marginTop : 'mt-0'}
+                `}
+    >
       <Image
         className="rounded-3xl border-3 border-black"
         src={memberImage}

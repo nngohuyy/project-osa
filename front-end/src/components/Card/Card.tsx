@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { generateSlug } from '@utils/utils';
 
 type CardProps = {
-  id: number;
+  // id: number;
   eventName: string;
   eventDate: string;
   eventDescription: string;

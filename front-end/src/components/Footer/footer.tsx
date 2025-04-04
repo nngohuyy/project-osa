@@ -1,14 +1,13 @@
 'use client'
 
 import Image from 'next/image';
-import logo from "/public/osa_vertical_black.svg";
 
 const currentYear = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <main className='bg-white'>
-      <div className='max-w-screen-xl mx-auto px-14 py-20'>
+    <main className='pb-20'>
+      <div className='max-w-screen-xl footer-background mx-auto px-14 py-20 border-4 border-black rounded-3xl'>
         <div className='flex flex-col gap-6'>
           <div className='flex flex-row justify-between gap-[240px]'>
             <div className='flex flex-col gap-10'>
@@ -34,9 +33,11 @@ export default function Footer() {
               </div>
             </div>
             <Image
-              src={logo}
+              src={`/osa_vertical_blue.svg`}
               alt="OSA Logo"
               className='h-[100px]'
+              width={500}
+              height={100}
             />
           </div>
           <div>

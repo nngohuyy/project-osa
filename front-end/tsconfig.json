@@ -18,24 +18,45 @@
     "incremental": true,
     "paths": {
       // PAGES
-      "@articles/*" : ["src/app/news-and-stories/*"],
-      "@contact/*": ["src/app/contact-us/*"],
-      "@events/*": ["src/app/projects/*"],
+      "@articles/*": [
+        "src/app/news-and-stories/*"
+      ],
+      "@contact/*": [
+        "src/app/contact-us/*"
+      ],
+      "@events/*": [
+        "src/app/projects/*"
+      ],
       // FOLDERS
-      "@components/*": ["src/components/*"],
-      "@constants/*": ["src/constants/*"],
-      "@app/*": ["src/app/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@lib/*": ["src/lib/*"],
-      "@utils/*": ["src/utils/*"],
-      "@public/*": ["public/*"],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@constants/*": [
+        "src/constants/*"
+      ],
+      "@app/*": [
+        "src/app/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@lib/*": [
+        "src/lib/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@public/*": [
+        "public/*"
+      ]
     },
     "baseUrl": ".",
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",

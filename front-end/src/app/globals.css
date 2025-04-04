@@ -1,8 +1,8 @@
+@import "general-sans.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('general-sans.css');
 
 body {
   @apply bg-[#FAF8F6] text-black font-sans;
@@ -65,7 +65,7 @@ p {
 }
 
 button {
-  @apply  px-6 py-1.5 translate-y-[-2px] bg-[#3B7CF3] text-black hover:bg-[#0309A8] hover:text-white rounded-md border-2 border-black shadow-solid hover:shadow-none font-bold ease-out hover:translate-y-[0px] duration-[0.15s];
+  @apply px-6 py-1.5 translate-y-[-2px] bg-[#3B7CF3] text-black hover:bg-[#0309A8] hover:text-white rounded-md border-2 border-black shadow-solid hover:shadow-none font-bold ease-out hover:translate-y-[0px] duration-[0.15s];
   font-size: 1rem;
 }
 
@@ -78,6 +78,12 @@ button {
   background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.8), rgba(245, 246, 252, 0.8)), url(/osa_cover.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.footer-background {
+  background: rgb(59, 124, 243);
+  background: linear-gradient(90deg, rgba(59, 124, 243, 1) 55%, rgba(199, 219, 255, 1) 100%);
+  color: white;
 }
 
 .swiper {
@@ -103,15 +109,18 @@ button {
   .section-about {
     @apply flex flex-col-reverse gap-4;
   }
+
   .osa-logo {
     @apply w-[30%];
   }
-  .swiper-slide{
+
+  .swiper-slide {
     width: 280px !important;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .image {
     @apply rounded-2xl aspect-[16/9] w-full object-cover object-center;
   }

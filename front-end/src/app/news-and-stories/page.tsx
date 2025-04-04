@@ -57,22 +57,22 @@ export default function NewsAndStoriesPage() {
         </div>
         <div className="flex flex-col gap-10">
           <div className="grid grid-cols-2 gap-10">
-            {EVENTS.eventList.map((event) => (
-              <CardBlog key={event.id}
+            {EVENTS.eventList.map((event, index) => (
+              <CardBlog key={index}
                 {
                 ...event}
               />
             ))}
           </div>
           <div className="grid grid-cols-3 gap-10">
-            {EVENTS.eventList.map((event) => (
-              <CardBlog key={event.id}
+            {EVENTS.eventList.map((event, index) => (
+              <CardBlog key={index}
                 {
                 ...event}
               />
             ))}
-            {EVENTS.eventList.map((event) => (
-              <CardBlog key={event.id}
+            {EVENTS.eventList.map((event, index) => (
+              <CardBlog key={index}
                 {
                 ...event}
               />

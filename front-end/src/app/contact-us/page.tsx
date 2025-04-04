@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image';
-import osa_gen10th_brush from "/public/osa_gen10th_brush.png";
 
 export default function ContactUsPage() {
   return (
@@ -11,8 +10,9 @@ export default function ContactUsPage() {
           <div className='flex justify-center'>
             <div className='flex flex-col justify-center w-1/2 lg:w-full'>
               <Image
-                src={osa_gen10th_brush}
+                src={`/osa_gen10th_brush.png`}
                 alt="OSA Logo"
+                fill
               />
             </div>
           </div>

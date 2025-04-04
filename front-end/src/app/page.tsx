@@ -42,17 +42,19 @@ export default function Home() {
             memberFirstName="Phat"
             memberLastName="Le Huu"
             memberPosition="Vice President"
-            memberImage="https://via.placeholder.com/1000" />
+            memberImage="/images/bod/bod_huu_phat.jpg"
+            marginTop='mt-40' />
           <MemberCard
             memberFirstName="Phuoc"
             memberLastName="Ngo Huu"
             memberPosition="President"
-            memberImage="https://via.placeholder.com/1000" />
+            memberImage="/images/bod/bod_huu_phuoc.jpg" />
           <MemberCard
             memberFirstName="Uyen Ly"
             memberLastName="Do Ngoc"
             memberPosition="Vice President"
-            memberImage="https://via.placeholder.com/1000" />
+            memberImage="/images/bod/bod_uyen_ly.jpg"
+            marginTop='mt-20' />
         </div>
       </section>
 
