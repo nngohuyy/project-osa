@@ -8,13 +8,11 @@ type MemberCardProps = {
   marginTop?: string;
 }
 
-function MemberCard({ memberFirstName, memberLastName, memberPosition, memberImage, marginTop }: MemberCardProps) {
+export const MemberCard = ({ memberFirstName, memberLastName, memberPosition, memberImage, marginTop }: MemberCardProps) => {
   return (
     <main
       className={`group p-10 h-fit flex flex-col gap-6 border-3 border-black bg-white
-                  rounded-tl-3xl rounded-br-3xl hover:bg-black hover:text-white
-                  transition duration-500 ease-in-out
-                  transform group-hover:-translate-y-1 hover:scale-105
+                  rounded-tl-3xl rounded-br-3xl hover:bg-black hover:text-white overflow-hidden
                   ${marginTop ? marginTop : 'mt-0'}
                 `}
     >
@@ -31,5 +29,3 @@ function MemberCard({ memberFirstName, memberLastName, memberPosition, memberIma
     </main>
   );
 }
-
-export default MemberCard;

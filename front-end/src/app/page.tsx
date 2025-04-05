@@ -1,8 +1,8 @@
 'use client'
 import './homepage.module.css';
-import MemberCard from "../components/MemberCard";
-
 import { DESCRIPTION, SAMPLE } from '@constants/descriptions';
+import { MemberCard } from "@components/MemberCard";
+import { MotionCard } from '@components/MotionCard';
 
 export default function Home() {
   return (
@@ -38,23 +38,23 @@ export default function Home() {
       <section className="max-w-screen-xl mx-auto px-6 md:px-14 xl:px-14 w-full">
         <h1 className="home-section-heading !text-center">Our team</h1>
         <div className="grid md:grid-cols-3 gap-4 min-h-[500px]">
-          <MemberCard
-            memberFirstName="Phat"
-            memberLastName="Le Huu"
-            memberPosition="Vice President"
-            memberImage="/images/bod/bod_huu_phat.jpg"
-            marginTop='mt-40' />
-          <MemberCard
-            memberFirstName="Phuoc"
-            memberLastName="Ngo Huu"
-            memberPosition="President"
-            memberImage="/images/bod/bod_huu_phuoc.jpg" />
-          <MemberCard
-            memberFirstName="Uyen Ly"
-            memberLastName="Do Ngoc"
-            memberPosition="Vice President"
-            memberImage="/images/bod/bod_uyen_ly.jpg"
-            marginTop='mt-20' />
+          {[{
+            first: "Phat", last: "Le Huu", pos: "Vice President", img: "/images/bod/bod_huu_phat.jpg", mt: "mt-0"
+          }, {
+            first: "Phuoc", last: "Ngo Huu", pos: "President", img: "/images/bod/bod_huu_phuoc.jpg"
+          }, {
+            first: "Uyen Ly", last: "Do Ngoc", pos: "Vice President", img: "/images/bod/bod_uyen_ly.jpg", mt: "mt-0"
+          }].map((member, i) => (
+            <MotionCard key={i} customDelay={i}>
+              <MemberCard
+                memberFirstName={member.first}
+                memberLastName={member.last}
+                memberPosition={member.pos}
+                memberImage={member.img}
+                marginTop={member.mt}
+              />
+            </MotionCard>
+          ))}
         </div>
       </section>
 
