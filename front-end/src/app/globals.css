@@ -65,7 +65,7 @@ p {
 }
 
 button {
-  @apply px-6 py-1.5 translate-y-[-2px] bg-[#3B7CF3] text-black hover:bg-[#0309A8] hover:text-white rounded-md border-2 border-black shadow-solid hover:shadow-none font-bold ease-out hover:translate-y-[0px] duration-[0.15s];
+  @apply px-6 py-1.5 translate-y-[-2px] bg-[#35589F] text-white hover:bg-[#3B6CB4] rounded-md border-2 border-black shadow-solid hover:shadow-none font-bold ease-out hover:translate-y-[0px] duration-[0.15s];
   font-size: 1rem;
 }
 
@@ -81,9 +81,11 @@ button {
 }
 
 .footer-background {
-  background: rgb(59, 124, 243);
-  background: linear-gradient(90deg, rgba(59, 124, 243, 1) 55%, rgba(199, 219, 255, 1) 100%);
-  color: white;
+  background-image: url(/images/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .swiper {
