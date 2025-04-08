@@ -9,6 +9,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import { EVENTS } from "../../constants/eventList";
+import { CustomButton } from '@components/Button';
+import { Play } from '@phosphor-icons/react/dist/ssr';
 
 export default function ProjectsPage() {
   return (
@@ -24,9 +26,9 @@ export default function ProjectsPage() {
               href='https://www.facebook.com/InternationalConnectionFestival/posts/pfbid02tp1FupmXwhJWRb4aZFtvPeeY2EVd64YELXHiNvPHToqvFxEGiSpo5XhocbvSA7f4l'
               target="_blank"
             >
-              <button className={`mt-2`}>
+              <CustomButton className={`mt-2`} startContent={<Play size={18} weight="bold" />}>
                 Watch the recap
-              </button>
+              </CustomButton>
             </Link>
           </div>
         </div>

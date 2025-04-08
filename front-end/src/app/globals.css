@@ -64,11 +64,6 @@ p {
   @apply text-base font-normal mb-4;
 }
 
-button {
-  @apply px-6 py-1.5 translate-y-[-2px] bg-[#35589F] text-white hover:bg-[#3B6CB4] rounded-md border-2 border-black shadow-solid hover:shadow-none font-bold ease-out hover:translate-y-[0px] duration-[0.15s];
-  font-size: 1rem;
-}
-
 .section-about {
   @apply grid justify-between grid-cols-2 gap-x-5;
   grid-template-columns: 4.5fr 1fr;

@@ -1,8 +1,10 @@
-import Image from "next/image";
-
 import { Metadata } from "next";
-import { Button } from "@nextui-org/button";
+
+import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
+
+import { CustomButton } from "@components/Button";
 import { LEADERS_EXECS } from "@constants/leader_execs";
+import { MotionBlogCard } from "@components/MotionCard";
 
 export const metadata: Metadata = {
   title: "OSA | About us",
@@ -18,7 +20,7 @@ export default function AboutUsPage() {
           Building Community<br />Bridging Opportunities
         </h1>
       </div>
-      <div className="bg-[url('/images/about-us-bg.jpg')] bg-cover bg-no-repeat bg-center h-[40rem] mt-10">
+      <div className="bg-[url('/images/about_us_bg_1.jpg')] bg-cover bg-no-repeat bg-center bg-fixed h-dvh mt-10">
         <div className="max-w-screen-xl mx-auto px-14 h-full flex items-center justify-end">
           <div className="text-black bg-white w-96 py-10 px-8 rounded-3xl">
             <h5 className="font-semibold mb-2">Our Stories</h5>
@@ -28,9 +30,9 @@ export default function AboutUsPage() {
               vibrant and inclusive community, bridge opportunities, and empower every
               student to achieve their fullest potential.
             </p>
-            <Button variant="light" className="mt-12 border-none shadow-none">
+            <CustomButton className="mt-10" endContent={<ArrowUpRight size={20} weight="bold" />}>
               Learn more
-            </Button>
+            </CustomButton>
           </div>
         </div>
       </div>
@@ -53,16 +55,16 @@ export default function AboutUsPage() {
             Our goal is to inspire purpose and drive, helping students pursue their passions and make
             meaningful contributions.
           </p>
-          <Button variant="light" className="mt-5 border-none shadow-none">
+          <CustomButton className="mt-10" endContent={<ArrowUpRight size={20} weight="bold" />}>
             Read our manifesto
-          </Button>
+          </CustomButton>
         </div>
       </div>
       <div className="max-w-screen-xl mx-auto px-14 flex flex-col gap-12 mt-32">
         <h2 className="font-semibold leading-[1.1]">Our mission</h2>
         <div className="grid grid-cols-[1fr_2fr] gap-5">
-          <div className="bg-[url('/eventsPage_cover.jpg')] bg-cover bg-no-repeat bg-center h-[20rem]"></div>
-          <div className="bg-[url('/eventsPage_cover.jpg')] bg-cover bg-no-repeat bg-center h-[20rem]"></div>
+          <div className="bg-[url('https://fwjgtkvusdwhmilevuji.supabase.co/storage/v1/object/sign/images/177A0168.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvMTc3QTAxNjguanBnIiwiaWF0IjoxNzQ0MTAyMTY2LCJleHAiOjE3NzU2MzgxNjZ9.MNv77xzUbWF5rE45o4oru1ScXRYeDjMBQCcFO6ZDMDU')] bg-cover bg-no-repeat bg-center h-[22rem]"></div>
+          <div className="bg-[url('/eventsPage_cover.jpg')] bg-cover bg-no-repeat bg-center h-[22rem]"></div>
         </div>
         <div className="grid grid-cols-4 gap-10">
           <div>
@@ -103,37 +105,41 @@ export default function AboutUsPage() {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto px-14 bg-white py-20 mt-32">
+      <div className="max-w-screen-xl mx-auto px-14 bg-white py-20 mt-32 rounded-3xl">
         <h2 className="font-semibold leading-[1.1]">Welcome Our Team Of<br />Executives and Leaders</h2>
         <div className="grid grid-cols-3 gap-10 mt-10">
           {
-            LEADERS_EXECS.BODS.map((member) => (
-              <div key={member.first_name} className="flex flex-col">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/bod/bod_huu_phuoc.jpg"
-                  alt="team member"
-                  className="object-cover h-[25rem]"
-                />
-                <h5 className="mt-4 font-medium">{member.last_name + " " + member.first_name}</h5>
-                <p>{member.position}</p>
-              </div>
+            LEADERS_EXECS.BODS.map((member, index) => (
+              <MotionBlogCard key={index} customDelay={index % 3}>
+                <div className="flex flex-col">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={member.image}
+                    alt="team member"
+                    className="object-cover h-[25rem] rounded-xl border-2"
+                  />
+                  <h5 className="mt-4 font-medium">{member.last_name + " " + member.first_name}</h5>
+                  <p>{member.position}</p>
+                </div>
+              </MotionBlogCard>
             ))
           }
         </div>
         <div className="grid grid-cols-4 gap-10 mt-10">
           {
-            LEADERS_EXECS.LEADERS.map((member) => (
-              <div key={member.first_name} className="flex flex-col">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/bod/bod_huu_phat.jpg"
-                  alt="team member"
-                  className="object-cover h-[25rem]"
-                />
-                <h5 className="mt-4 font-medium">{member.last_name + " " + member.first_name}</h5>
-                <p>{member.position}</p>
-              </div>
+            LEADERS_EXECS.LEADERS.map((member, index) => (
+              <MotionBlogCard key={index} customDelay={index % 4}>
+                <div key={member.first_name} className="flex flex-col">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={member.image}
+                    alt="team member"
+                    className="object-cover h-[25rem] rounded-xl border-2"
+                  />
+                  <h5 className="mt-4 font-medium">{member.last_name + " " + member.first_name}</h5>
+                  <p>{member.position}</p>
+                </div>
+              </MotionBlogCard>
             ))
           }
         </div>

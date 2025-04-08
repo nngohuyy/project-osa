@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import { generateSlug } from '@utils/utils';
+import { CustomButton } from '@components/Button';
+import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr';
 
 type CardProps = {
   // id: number;
@@ -15,6 +17,7 @@ function Card({ eventDate, eventDescription, eventImage, eventName }: CardProps)
   return (
     <main className='w-[340px] flex flex-col bg-white rounded-2xl overflow-hidden'>
       <div className='h-[240px] w-full overflow-hidden items-center justify-center flex'>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img className="image" src={eventImage} alt='' />
       </div>
       <div className='p-5 flex flex-col'>
@@ -25,9 +28,9 @@ function Card({ eventDate, eventDescription, eventImage, eventName }: CardProps)
         <p className="body2!">
           {eventDescription}
         </p>
-        <button className='text-tiny py-1'>
+        <CustomButton size='sm' endContent={<ArrowUpRight size={20} weight="bold" />}>
           Learn more
-        </button>
+        </CustomButton>
       </div>
     </main>
   );
