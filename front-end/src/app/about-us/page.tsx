@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { Metadata } from "next";
 import { Button } from "@nextui-org/button";
+import { LEADERS_EXECS } from "@constants/leader_execs";
 
 export const metadata: Metadata = {
   title: "OSA | About us",
@@ -104,87 +105,37 @@ export default function AboutUsPage() {
       </div>
       <div className="max-w-screen-xl mx-auto px-14 bg-white py-20 mt-32">
         <h2 className="font-semibold leading-[1.1]">Welcome Our Team Of<br />Executives and Leaders</h2>
+        <div className="grid grid-cols-3 gap-10 mt-10">
+          {
+            LEADERS_EXECS.BODS.map((member) => (
+              <div key={member.first_name} className="flex flex-col">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/bod/bod_huu_phuoc.jpg"
+                  alt="team member"
+                  className="object-cover h-[25rem]"
+                />
+                <h5 className="mt-4 font-medium">{member.last_name + " " + member.first_name}</h5>
+                <p>{member.position}</p>
+              </div>
+            ))
+          }
+        </div>
         <div className="grid grid-cols-4 gap-10 mt-10">
-          <div className="flex flex-col">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/bod/bod_huu_phuoc.jpg"
-              alt="team member"
-              className="object-cover h-[25rem]"
-            />
-            <h4 className="mt-4 font-medium">John Doe</h4>
-            <p>President</p>
-          </div>
-          <div className="flex flex-col">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/bod/bod_huu_phuoc.jpg"
-              alt="team member"
-              className="object-cover h-[25rem]"
-            />
-            <h4 className="mt-4 font-medium">John Doe</h4>
-            <p>President</p>
-          </div>
-          <div className="flex flex-col">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/bod/bod_huu_phuoc.jpg"
-              alt="team member"
-              className="object-cover h-[25rem]"
-            />
-            <h4 className="mt-4 font-medium">John Doe</h4>
-            <p>President</p>
-          </div>
-          <div className="flex flex-col">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/bod/bod_huu_phuoc.jpg"
-              alt="team member"
-              className="object-cover h-[25rem]"
-            />
-            <h4 className="mt-4 font-medium">John Doe</h4>
-            <p>President</p>
-          </div>
-          <div className="flex flex-col">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/bod/bod_huu_phuoc.jpg"
-              alt="team member"
-              className="object-cover h-[25rem]"
-            />
-            <h4 className="mt-4 font-medium">John Doe</h4>
-            <p>President</p>
-          </div>
-          <div className="flex flex-col">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/bod/bod_huu_phuoc.jpg"
-              alt="team member"
-              className="object-cover h-[25rem]"
-            />
-            <h4 className="mt-4 font-medium">John Doe</h4>
-            <p>President</p>
-          </div>
-          <div className="flex flex-col">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/bod/bod_huu_phuoc.jpg"
-              alt="team member"
-              className="object-cover h-[25rem]"
-            />
-            <h4 className="mt-4 font-medium">John Doe</h4>
-            <p>President</p>
-          </div>
-          <div className="flex flex-col">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/bod/bod_huu_phuoc.jpg"
-              alt="team member"
-              className="object-cover h-[25rem]"
-            />
-            <h4 className="mt-4 font-medium">John Doe</h4>
-            <p>President</p>
-          </div>
+          {
+            LEADERS_EXECS.LEADERS.map((member) => (
+              <div key={member.first_name} className="flex flex-col">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/bod/bod_huu_phat.jpg"
+                  alt="team member"
+                  className="object-cover h-[25rem]"
+                />
+                <h5 className="mt-4 font-medium">{member.last_name + " " + member.first_name}</h5>
+                <p>{member.position}</p>
+              </div>
+            ))
+          }
         </div>
       </div>
       <div className="max-w-screen-xl mx-auto">
