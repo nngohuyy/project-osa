@@ -9,10 +9,11 @@ export default function ContactUsPage() {
         <div className='grid gap-10 lg:grid-cols-[1fr_2fr] lg:gap-20 xl:gap-40'>
           <div className='flex justify-center'>
             <div className='flex flex-col justify-center w-1/2 lg:w-full'>
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src={`/osa_gen10th_brush.png`}
                 alt="OSA Logo"
-                fill
+                className='w-56 object-contain'
               />
             </div>
           </div>
