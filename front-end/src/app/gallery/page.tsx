@@ -1,4 +1,8 @@
 const imageList = [
+  { key: "mem_19", value: "/images/bts/mem_19.jpg" },
+  { key: "mem_18", value: "/images/bts/mem_18.jpg" },
+  { key: "mem_17", value: "/images/bts/mem_17.jpg" },
+  { key: "mem_16", value: "/images/bts/mem_16.jpg" },
   { key: "mem_01", value: "/images/bts/mem_01.jpg" },
   { key: "mem_02", value: "/images/bts/mem_02.jpg" },
   { key: "mem_03", value: "/images/bts/mem_03.jpg" },

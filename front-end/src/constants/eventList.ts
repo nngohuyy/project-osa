@@ -1,10 +1,16 @@
 export const EVENTS = {
   eventList: [
     {
+      eventName: "OSA Podcasts #3: Whispers of Eternity",
+      eventDate: "April 12, 2025",
+      eventDescription: "“What are the quiet whispers of time trying to tell you?”",
+      eventImage: "/7_podcast3.jpg",
+    },
+    {
       eventName: "International Connection Festival 2025: Into the Harmony",
       eventDate: "May 10, 2025",
       eventDescription: "Unveiling the mystery, International Connection Festival 2025 (OISP Internation Festival) has arrived at INTO THE HARMONY - a magical world where music and wonder intertwine to tell extraordinary stories.",
-      eventImage: "/icf25.jpg",
+      eventImage: "/6_icf25.jpg",
     },
     {
       eventName: "OISP International Festival 2024: Luminary",
